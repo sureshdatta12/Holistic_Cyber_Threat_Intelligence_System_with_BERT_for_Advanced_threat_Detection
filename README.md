@@ -1,4 +1,4 @@
-# Threat Intelligence Platform (TIP)
+# Holistic_Cyber_Threat_Intelligence_System_with_BERT_for_Advanced_threat_Detection
 
 An advanced AI-powered Threat Intelligence Platform that collects, analyzes, and contextualizes cybersecurity threats in real-time.
 
