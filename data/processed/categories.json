@@ -1,0 +1,12 @@
+{
+  "apt": 0,
+  "data_breach": 1,
+  "ddos": 2,
+  "insider_threat": 3,
+  "malware": 4,
+  "phishing": 5,
+  "ransomware": 6,
+  "social_engineering": 7,
+  "web_attack": 8,
+  "zero_day": 9
+}

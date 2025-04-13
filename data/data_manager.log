@@ -1,0 +1,855 @@
+2025-02-16 16:26:12.442 | INFO     | __main__:train_model:39 - No training data found. Adding sample data...
+2025-02-16 16:26:12.443 | INFO     | models.bert.data_manager:add_training_data:77 - Added 5 entries to malware category (0 invalid entries skipped)
+2025-02-16 16:26:12.443 | INFO     | models.bert.data_manager:add_training_data:77 - Added 5 entries to phishing category (0 invalid entries skipped)
+2025-02-16 16:26:12.444 | INFO     | models.bert.data_manager:add_training_data:77 - Added 5 entries to ddos category (0 invalid entries skipped)
+2025-02-16 16:26:12.444 | INFO     | models.bert.data_manager:add_training_data:77 - Added 5 entries to zero_day category (0 invalid entries skipped)
+2025-02-16 16:26:12.444 | INFO     | models.bert.data_manager:add_sample_data:260 - Added 20 sample entries across 4 categories
+2025-02-16 16:26:12.445 | INFO     | __main__:train_model:42 - Added sample data. Total samples: 20
+2025-02-16 16:26:12.445 | INFO     | models.bert.data_manager:load_training_data:122 - Loaded 5 valid entries from zero_day.jsonl
+2025-02-16 16:26:12.446 | INFO     | models.bert.data_manager:load_training_data:122 - Loaded 5 valid entries from phishing.jsonl
+2025-02-16 16:26:12.446 | INFO     | models.bert.data_manager:load_training_data:122 - Loaded 5 valid entries from ddos.jsonl
+2025-02-16 16:26:12.446 | INFO     | models.bert.data_manager:load_training_data:122 - Loaded 5 valid entries from malware.jsonl
+2025-02-16 16:26:12.446 | INFO     | models.bert.data_manager:load_training_data:128 - Saved category mapping with 4 categories
+2025-02-16 16:26:12.462 | INFO     | models.bert.data_manager:prepare_training_data:155 - Split data into 16 training and 4 test samples
+2025-02-16 16:27:40.975 | INFO     | __main__:train_model:50 - Using device: cpu
+2025-02-16 16:27:44.409 | INFO     | __main__:train_model:113 - Starting training...
+2025-02-16 16:27:49.188 | INFO     | __main__:train_model:186 - Epoch 1/3
+2025-02-16 16:27:49.189 | INFO     | __main__:train_model:187 - Average training loss: 2.1442
+2025-02-16 16:27:49.189 | INFO     | __main__:train_model:188 - Accuracy: 0.0000
+2025-02-16 16:27:54.288 | INFO     | models.bert.threat_classifier:save_model:140 - Model saved to models/saved/best_model
+2025-02-16 16:27:54.289 | INFO     | __main__:train_model:181 - Saved best model with accuracy: 0.5000
+2025-02-16 16:27:54.289 | INFO     | __main__:train_model:186 - Epoch 2/3
+2025-02-16 16:27:54.290 | INFO     | __main__:train_model:187 - Average training loss: 1.9794
+2025-02-16 16:27:54.290 | INFO     | __main__:train_model:188 - Accuracy: 0.5000
+2025-02-16 16:27:57.679 | INFO     | __main__:train_model:186 - Epoch 3/3
+2025-02-16 16:27:57.680 | INFO     | __main__:train_model:187 - Average training loss: 1.8935
+2025-02-16 16:27:57.680 | INFO     | __main__:train_model:188 - Accuracy: 0.2500
+2025-02-16 16:27:57.702 | INFO     | __main__:train_model:241 - Saved training results to models/saved/training_results.json
+2025-02-16 16:27:57.778 | INFO     | __main__:<module>:265 - Training completed!
+2025-02-16 16:27:57.778 | INFO     | __main__:<module>:266 - Best accuracy: 0.5000
+2025-02-16 16:27:57.779 | INFO     | __main__:<module>:267 - 
+Classification Report:
+2025-02-16 16:27:57.779 | INFO     | __main__:<module>:270 - 
+zero_day:
+2025-02-16 16:27:57.779 | INFO     | __main__:<module>:271 - Precision: 0.0000
+2025-02-16 16:27:57.779 | INFO     | __main__:<module>:272 - Recall: 0.0000
+2025-02-16 16:27:57.779 | INFO     | __main__:<module>:273 - F1-score: 0.0000
+2025-02-16 16:27:57.779 | INFO     | __main__:<module>:270 - 
+phishing:
+2025-02-16 16:27:57.779 | INFO     | __main__:<module>:271 - Precision: 0.2500
+2025-02-16 16:27:57.779 | INFO     | __main__:<module>:272 - Recall: 1.0000
+2025-02-16 16:27:57.780 | INFO     | __main__:<module>:273 - F1-score: 0.4000
+2025-02-16 16:27:57.780 | INFO     | __main__:<module>:270 - 
+ddos:
+2025-02-16 16:27:57.780 | INFO     | __main__:<module>:271 - Precision: 0.0000
+2025-02-16 16:27:57.780 | INFO     | __main__:<module>:272 - Recall: 0.0000
+2025-02-16 16:27:57.780 | INFO     | __main__:<module>:273 - F1-score: 0.0000
+2025-02-16 16:27:57.780 | INFO     | __main__:<module>:270 - 
+malware:
+2025-02-16 16:27:57.780 | INFO     | __main__:<module>:271 - Precision: 0.0000
+2025-02-16 16:27:57.780 | INFO     | __main__:<module>:272 - Recall: 0.0000
+2025-02-16 16:27:57.781 | INFO     | __main__:<module>:273 - F1-score: 0.0000
+2025-02-16 16:27:57.781 | INFO     | __main__:<module>:270 - 
+macro avg:
+2025-02-16 16:27:57.781 | INFO     | __main__:<module>:271 - Precision: 0.0625
+2025-02-16 16:27:57.781 | INFO     | __main__:<module>:272 - Recall: 0.2500
+2025-02-16 16:27:57.781 | INFO     | __main__:<module>:273 - F1-score: 0.1000
+2025-02-16 16:27:57.781 | INFO     | __main__:<module>:270 - 
+weighted avg:
+2025-02-16 16:27:57.781 | INFO     | __main__:<module>:271 - Precision: 0.0625
+2025-02-16 16:27:57.781 | INFO     | __main__:<module>:272 - Recall: 0.2500
+2025-02-16 16:27:57.781 | INFO     | __main__:<module>:273 - F1-score: 0.1000
+2025-02-16 16:29:58.833 | INFO     | models.bert.data_manager:load_training_data:122 - Loaded 5 valid entries from zero_day.jsonl
+2025-02-16 16:29:58.833 | INFO     | models.bert.data_manager:load_training_data:122 - Loaded 5 valid entries from phishing.jsonl
+2025-02-16 16:29:58.833 | INFO     | models.bert.data_manager:load_training_data:122 - Loaded 5 valid entries from ddos.jsonl
+2025-02-16 16:29:58.833 | INFO     | models.bert.data_manager:load_training_data:122 - Loaded 5 valid entries from malware.jsonl
+2025-02-16 16:29:58.834 | INFO     | models.bert.data_manager:load_training_data:128 - Saved category mapping with 4 categories
+2025-02-16 16:29:58.835 | INFO     | models.bert.data_manager:prepare_training_data:155 - Split data into 16 training and 4 test samples
+2025-02-16 16:29:58.835 | INFO     | models.bert.threat_classifier:__init__:13 - Using device: cpu
+2025-02-16 16:30:04.064 | INFO     | models.bert.threat_classifier:__init__:17 - Loaded tokenizer: bert-base-uncased
+2025-02-16 16:31:36.641 | INFO     | models.bert.threat_classifier:__init__:23 - Loaded model: bert-base-uncased
+2025-02-16 16:31:36.642 | INFO     | __main__:train_model:53 - Using device: cpu
+2025-02-16 16:31:37.435 | INFO     | __main__:train_model:119 - Starting training...
+2025-02-16 16:31:44.184 | INFO     | models.bert.threat_classifier:save_model:198 - Model saved to models/saved/best_model
+2025-02-16 16:31:44.186 | INFO     | __main__:train_model:209 - Saved best model with F1 score: 0.1000
+2025-02-16 16:31:44.186 | INFO     | __main__:train_model:226 - Epoch 1/10
+2025-02-16 16:31:44.186 | INFO     | __main__:train_model:227 - Average training loss: 2.2891
+2025-02-16 16:31:44.186 | INFO     | __main__:train_model:228 - Accuracy: 0.2500
+2025-02-16 16:31:44.186 | INFO     | __main__:train_model:229 - F1 Score: 0.1000
+2025-02-16 16:31:49.210 | INFO     | __main__:train_model:226 - Epoch 2/10
+2025-02-16 16:31:49.211 | INFO     | __main__:train_model:227 - Average training loss: 2.2004
+2025-02-16 16:31:49.212 | INFO     | __main__:train_model:228 - Accuracy: 0.2500
+2025-02-16 16:31:49.212 | INFO     | __main__:train_model:229 - F1 Score: 0.1000
+2025-02-16 16:31:53.990 | INFO     | models.bert.threat_classifier:save_model:198 - Model saved to models/saved/best_model
+2025-02-16 16:31:53.991 | INFO     | __main__:train_model:209 - Saved best model with F1 score: 0.1250
+2025-02-16 16:31:53.991 | INFO     | __main__:train_model:226 - Epoch 3/10
+2025-02-16 16:31:53.991 | INFO     | __main__:train_model:227 - Average training loss: 1.9235
+2025-02-16 16:31:53.991 | INFO     | __main__:train_model:228 - Accuracy: 0.2500
+2025-02-16 16:31:53.991 | INFO     | __main__:train_model:229 - F1 Score: 0.1250
+2025-02-16 16:31:59.549 | INFO     | models.bert.threat_classifier:save_model:198 - Model saved to models/saved/best_model
+2025-02-16 16:31:59.550 | INFO     | __main__:train_model:209 - Saved best model with F1 score: 0.3750
+2025-02-16 16:31:59.550 | INFO     | __main__:train_model:226 - Epoch 4/10
+2025-02-16 16:31:59.550 | INFO     | __main__:train_model:227 - Average training loss: 1.8587
+2025-02-16 16:31:59.550 | INFO     | __main__:train_model:228 - Accuracy: 0.5000
+2025-02-16 16:31:59.550 | INFO     | __main__:train_model:229 - F1 Score: 0.3750
+2025-02-16 16:32:04.121 | INFO     | __main__:train_model:226 - Epoch 5/10
+2025-02-16 16:32:04.123 | INFO     | __main__:train_model:227 - Average training loss: 1.7374
+2025-02-16 16:32:04.124 | INFO     | __main__:train_model:228 - Accuracy: 0.5000
+2025-02-16 16:32:04.124 | INFO     | __main__:train_model:229 - F1 Score: 0.3333
+2025-02-16 16:32:08.640 | INFO     | __main__:train_model:226 - Epoch 6/10
+2025-02-16 16:32:08.642 | INFO     | __main__:train_model:227 - Average training loss: 1.6906
+2025-02-16 16:32:08.642 | INFO     | __main__:train_model:228 - Accuracy: 0.2500
+2025-02-16 16:32:08.643 | INFO     | __main__:train_model:229 - F1 Score: 0.1667
+2025-02-16 16:32:13.046 | INFO     | __main__:train_model:226 - Epoch 7/10
+2025-02-16 16:32:13.047 | INFO     | __main__:train_model:227 - Average training loss: 1.6208
+2025-02-16 16:32:13.047 | INFO     | __main__:train_model:228 - Accuracy: 0.2500
+2025-02-16 16:32:13.047 | INFO     | __main__:train_model:229 - F1 Score: 0.1667
+2025-02-16 16:32:18.734 | INFO     | __main__:train_model:226 - Epoch 8/10
+2025-02-16 16:32:18.735 | INFO     | __main__:train_model:227 - Average training loss: 1.4258
+2025-02-16 16:32:18.736 | INFO     | __main__:train_model:228 - Accuracy: 0.2500
+2025-02-16 16:32:18.736 | INFO     | __main__:train_model:229 - F1 Score: 0.1667
+2025-02-16 16:32:24.093 | INFO     | __main__:train_model:220 - Early stopping triggered after 9 epochs
+2025-02-16 16:32:24.106 | INFO     | __main__:train_model:287 - Saved training results to models/saved/training_results.json
+2025-02-16 16:32:24.212 | INFO     | __main__:<module>:311 - Training completed!
+2025-02-16 16:32:24.212 | INFO     | __main__:<module>:312 - Best accuracy: 0.5000
+2025-02-16 16:32:24.212 | INFO     | __main__:<module>:313 - Best F1 score: 0.3750
+2025-02-16 16:32:24.212 | INFO     | __main__:<module>:314 - 
+Classification Report:
+2025-02-16 16:32:24.212 | INFO     | __main__:<module>:317 - 
+zero_day:
+2025-02-16 16:32:24.213 | INFO     | __main__:<module>:318 - Precision: 0.0000
+2025-02-16 16:32:24.213 | INFO     | __main__:<module>:319 - Recall: 0.0000
+2025-02-16 16:32:24.213 | INFO     | __main__:<module>:320 - F1-score: 0.0000
+2025-02-16 16:32:24.213 | INFO     | __main__:<module>:317 - 
+phishing:
+2025-02-16 16:32:24.213 | INFO     | __main__:<module>:318 - Precision: 0.5000
+2025-02-16 16:32:24.213 | INFO     | __main__:<module>:319 - Recall: 1.0000
+2025-02-16 16:32:24.213 | INFO     | __main__:<module>:320 - F1-score: 0.6667
+2025-02-16 16:32:24.213 | INFO     | __main__:<module>:317 - 
+ddos:
+2025-02-16 16:32:24.214 | INFO     | __main__:<module>:318 - Precision: 0.0000
+2025-02-16 16:32:24.214 | INFO     | __main__:<module>:319 - Recall: 0.0000
+2025-02-16 16:32:24.214 | INFO     | __main__:<module>:320 - F1-score: 0.0000
+2025-02-16 16:32:24.214 | INFO     | __main__:<module>:317 - 
+malware:
+2025-02-16 16:32:24.214 | INFO     | __main__:<module>:318 - Precision: 0.5000
+2025-02-16 16:32:24.214 | INFO     | __main__:<module>:319 - Recall: 1.0000
+2025-02-16 16:32:24.215 | INFO     | __main__:<module>:320 - F1-score: 0.6667
+2025-02-16 16:32:24.215 | INFO     | __main__:<module>:317 - 
+macro avg:
+2025-02-16 16:32:24.215 | INFO     | __main__:<module>:318 - Precision: 0.2500
+2025-02-16 16:32:24.215 | INFO     | __main__:<module>:319 - Recall: 0.5000
+2025-02-16 16:32:24.215 | INFO     | __main__:<module>:320 - F1-score: 0.3333
+2025-02-16 16:32:24.215 | INFO     | __main__:<module>:317 - 
+weighted avg:
+2025-02-16 16:32:24.216 | INFO     | __main__:<module>:318 - Precision: 0.2500
+2025-02-16 16:32:24.216 | INFO     | __main__:<module>:319 - Recall: 0.5000
+2025-02-16 16:32:24.216 | INFO     | __main__:<module>:320 - F1-score: 0.3333
+2025-02-16 16:48:44.840 | INFO     | models.bert.data_manager:load_training_data:122 - Loaded 5 valid entries from zero_day.jsonl
+2025-02-16 16:48:44.841 | INFO     | models.bert.data_manager:load_training_data:122 - Loaded 5 valid entries from phishing.jsonl
+2025-02-16 16:48:44.842 | INFO     | models.bert.data_manager:load_training_data:122 - Loaded 5 valid entries from ddos.jsonl
+2025-02-16 16:48:44.842 | INFO     | models.bert.data_manager:load_training_data:122 - Loaded 5 valid entries from malware.jsonl
+2025-02-16 16:48:44.843 | INFO     | models.bert.data_manager:load_training_data:128 - Saved category mapping with 4 categories
+2025-02-16 16:48:44.845 | INFO     | models.bert.data_manager:prepare_training_data:155 - Split data into 16 training and 4 test samples
+2025-02-16 16:48:44.845 | INFO     | models.bert.threat_classifier:__init__:13 - Using device: cpu
+2025-02-16 16:48:45.310 | INFO     | models.bert.threat_classifier:__init__:17 - Loaded tokenizer: bert-base-uncased
+2025-02-16 16:48:45.766 | INFO     | models.bert.threat_classifier:__init__:23 - Loaded model: bert-base-uncased
+2025-02-16 16:48:45.766 | INFO     | __main__:train_model:53 - Using device: cpu
+2025-02-16 16:48:46.610 | INFO     | __main__:train_model:119 - Starting training...
+2025-02-16 16:48:56.942 | INFO     | models.bert.threat_classifier:save_model:198 - Model saved to models/saved/best_model
+2025-02-16 16:48:56.943 | INFO     | __main__:train_model:209 - Saved best model with F1 score: 0.1000
+2025-02-16 16:48:56.943 | INFO     | __main__:train_model:226 - Epoch 1/10
+2025-02-16 16:48:56.943 | INFO     | __main__:train_model:227 - Average training loss: 2.1900
+2025-02-16 16:48:56.943 | INFO     | __main__:train_model:228 - Accuracy: 0.2500
+2025-02-16 16:48:56.943 | INFO     | __main__:train_model:229 - F1 Score: 0.1000
+2025-02-16 16:49:02.676 | INFO     | __main__:train_model:226 - Epoch 2/10
+2025-02-16 16:49:02.678 | INFO     | __main__:train_model:227 - Average training loss: 1.9897
+2025-02-16 16:49:02.678 | INFO     | __main__:train_model:228 - Accuracy: 0.2500
+2025-02-16 16:49:02.679 | INFO     | __main__:train_model:229 - F1 Score: 0.1000
+2025-02-16 16:49:09.630 | INFO     | models.bert.threat_classifier:save_model:198 - Model saved to models/saved/best_model
+2025-02-16 16:49:09.632 | INFO     | __main__:train_model:209 - Saved best model with F1 score: 0.1667
+2025-02-16 16:49:09.632 | INFO     | __main__:train_model:226 - Epoch 3/10
+2025-02-16 16:49:09.632 | INFO     | __main__:train_model:227 - Average training loss: 1.9168
+2025-02-16 16:49:09.632 | INFO     | __main__:train_model:228 - Accuracy: 0.2500
+2025-02-16 16:49:09.633 | INFO     | __main__:train_model:229 - F1 Score: 0.1667
+2025-02-16 16:49:17.478 | INFO     | __main__:train_model:226 - Epoch 4/10
+2025-02-16 16:49:17.484 | INFO     | __main__:train_model:227 - Average training loss: 1.7204
+2025-02-16 16:49:17.484 | INFO     | __main__:train_model:228 - Accuracy: 0.2500
+2025-02-16 16:49:17.485 | INFO     | __main__:train_model:229 - F1 Score: 0.1250
+2025-02-16 16:49:23.504 | INFO     | __main__:train_model:226 - Epoch 5/10
+2025-02-16 16:49:23.506 | INFO     | __main__:train_model:227 - Average training loss: 1.7077
+2025-02-16 16:49:23.506 | INFO     | __main__:train_model:228 - Accuracy: 0.2500
+2025-02-16 16:49:23.506 | INFO     | __main__:train_model:229 - F1 Score: 0.1250
+2025-02-16 16:49:29.208 | INFO     | __main__:train_model:226 - Epoch 6/10
+2025-02-16 16:49:29.209 | INFO     | __main__:train_model:227 - Average training loss: 1.5788
+2025-02-16 16:49:29.209 | INFO     | __main__:train_model:228 - Accuracy: 0.2500
+2025-02-16 16:49:29.209 | INFO     | __main__:train_model:229 - F1 Score: 0.1250
+2025-02-16 16:49:35.030 | INFO     | __main__:train_model:226 - Epoch 7/10
+2025-02-16 16:49:35.033 | INFO     | __main__:train_model:227 - Average training loss: 1.4855
+2025-02-16 16:49:35.034 | INFO     | __main__:train_model:228 - Accuracy: 0.2500
+2025-02-16 16:49:35.034 | INFO     | __main__:train_model:229 - F1 Score: 0.1250
+2025-02-16 16:49:40.468 | INFO     | __main__:train_model:220 - Early stopping triggered after 8 epochs
+2025-02-16 16:49:40.488 | INFO     | __main__:train_model:287 - Saved training results to models/saved/training_results.json
+2025-02-16 16:49:40.593 | INFO     | __main__:<module>:311 - Training completed!
+2025-02-16 16:49:40.594 | INFO     | __main__:<module>:312 - Best accuracy: 0.2500
+2025-02-16 16:49:40.594 | INFO     | __main__:<module>:313 - Best F1 score: 0.1667
+2025-02-16 16:49:40.594 | INFO     | __main__:<module>:314 - 
+Classification Report:
+2025-02-16 16:49:40.594 | INFO     | __main__:<module>:317 - 
+zero_day:
+2025-02-16 16:49:40.594 | INFO     | __main__:<module>:318 - Precision: 0.0000
+2025-02-16 16:49:40.594 | INFO     | __main__:<module>:319 - Recall: 0.0000
+2025-02-16 16:49:40.595 | INFO     | __main__:<module>:320 - F1-score: 0.0000
+2025-02-16 16:49:40.595 | INFO     | __main__:<module>:317 - 
+phishing:
+2025-02-16 16:49:40.595 | INFO     | __main__:<module>:318 - Precision: 0.0000
+2025-02-16 16:49:40.595 | INFO     | __main__:<module>:319 - Recall: 0.0000
+2025-02-16 16:49:40.595 | INFO     | __main__:<module>:320 - F1-score: 0.0000
+2025-02-16 16:49:40.595 | INFO     | __main__:<module>:317 - 
+ddos:
+2025-02-16 16:49:40.595 | INFO     | __main__:<module>:318 - Precision: 0.0000
+2025-02-16 16:49:40.596 | INFO     | __main__:<module>:319 - Recall: 0.0000
+2025-02-16 16:49:40.596 | INFO     | __main__:<module>:320 - F1-score: 0.0000
+2025-02-16 16:49:40.596 | INFO     | __main__:<module>:317 - 
+malware:
+2025-02-16 16:49:40.596 | INFO     | __main__:<module>:318 - Precision: 0.3333
+2025-02-16 16:49:40.596 | INFO     | __main__:<module>:319 - Recall: 1.0000
+2025-02-16 16:49:40.596 | INFO     | __main__:<module>:320 - F1-score: 0.5000
+2025-02-16 16:49:40.597 | INFO     | __main__:<module>:317 - 
+macro avg:
+2025-02-16 16:49:40.597 | INFO     | __main__:<module>:318 - Precision: 0.0833
+2025-02-16 16:49:40.597 | INFO     | __main__:<module>:319 - Recall: 0.2500
+2025-02-16 16:49:40.597 | INFO     | __main__:<module>:320 - F1-score: 0.1250
+2025-02-16 16:49:40.597 | INFO     | __main__:<module>:317 - 
+weighted avg:
+2025-02-16 16:49:40.597 | INFO     | __main__:<module>:318 - Precision: 0.0833
+2025-02-16 16:49:40.597 | INFO     | __main__:<module>:319 - Recall: 0.2500
+2025-02-16 16:49:40.597 | INFO     | __main__:<module>:320 - F1-score: 0.1250
+2025-02-16 16:51:13.050 | INFO     | __main__:train_model:42 - No training data found. Adding sample data...
+2025-02-16 16:51:13.050 | INFO     | models.bert.data_manager:add_training_data:78 - Added 10 entries to malware category (0 invalid entries skipped)
+2025-02-16 16:51:13.051 | INFO     | models.bert.data_manager:add_training_data:78 - Added 10 entries to phishing category (0 invalid entries skipped)
+2025-02-16 16:51:13.051 | INFO     | models.bert.data_manager:add_training_data:78 - Added 10 entries to ddos category (0 invalid entries skipped)
+2025-02-16 16:51:13.052 | INFO     | models.bert.data_manager:add_training_data:78 - Added 10 entries to zero_day category (0 invalid entries skipped)
+2025-02-16 16:51:13.052 | INFO     | models.bert.data_manager:add_training_data:78 - Added 10 entries to apt category (0 invalid entries skipped)
+2025-02-16 16:51:13.052 | INFO     | models.bert.data_manager:add_training_data:78 - Added 10 entries to web_attack category (0 invalid entries skipped)
+2025-02-16 16:51:13.052 | INFO     | models.bert.data_manager:add_training_data:78 - Added 10 entries to insider_threat category (0 invalid entries skipped)
+2025-02-16 16:51:13.053 | INFO     | models.bert.data_manager:add_training_data:78 - Added 10 entries to data_breach category (0 invalid entries skipped)
+2025-02-16 16:51:13.053 | INFO     | models.bert.data_manager:add_training_data:78 - Added 10 entries to ransomware category (0 invalid entries skipped)
+2025-02-16 16:51:13.053 | INFO     | models.bert.data_manager:add_training_data:78 - Added 10 entries to social_engineering category (0 invalid entries skipped)
+2025-02-16 16:51:13.053 | INFO     | models.bert.data_manager:add_sample_data:353 - Added 100 sample entries across 10 categories
+2025-02-16 16:51:13.055 | INFO     | __main__:train_model:45 - Added sample data. Total samples: 100
+2025-02-16 16:51:13.055 | INFO     | models.bert.data_manager:load_training_data:123 - Loaded 10 valid entries from apt.jsonl
+2025-02-16 16:51:13.055 | INFO     | models.bert.data_manager:load_training_data:123 - Loaded 10 valid entries from data_breach.jsonl
+2025-02-16 16:51:13.056 | INFO     | models.bert.data_manager:load_training_data:123 - Loaded 10 valid entries from ddos.jsonl
+2025-02-16 16:51:13.057 | INFO     | models.bert.data_manager:load_training_data:123 - Loaded 10 valid entries from insider_threat.jsonl
+2025-02-16 16:51:13.057 | INFO     | models.bert.data_manager:load_training_data:123 - Loaded 10 valid entries from malware.jsonl
+2025-02-16 16:51:13.058 | INFO     | models.bert.data_manager:load_training_data:123 - Loaded 10 valid entries from phishing.jsonl
+2025-02-16 16:51:13.058 | INFO     | models.bert.data_manager:load_training_data:123 - Loaded 10 valid entries from ransomware.jsonl
+2025-02-16 16:51:13.058 | INFO     | models.bert.data_manager:load_training_data:123 - Loaded 10 valid entries from social_engineering.jsonl
+2025-02-16 16:51:13.059 | INFO     | models.bert.data_manager:load_training_data:123 - Loaded 10 valid entries from web_attack.jsonl
+2025-02-16 16:51:13.059 | INFO     | models.bert.data_manager:load_training_data:123 - Loaded 10 valid entries from zero_day.jsonl
+2025-02-16 16:51:13.059 | INFO     | models.bert.data_manager:load_training_data:129 - Saved category mapping with 10 categories
+2025-02-16 16:51:13.062 | INFO     | models.bert.data_manager:prepare_training_data:156 - Split data into 80 training and 20 test samples
+2025-02-16 16:51:13.062 | INFO     | models.bert.threat_classifier:__init__:13 - Using device: cpu
+2025-02-16 16:51:13.612 | INFO     | models.bert.threat_classifier:__init__:17 - Loaded tokenizer: bert-base-uncased
+2025-02-16 16:51:14.068 | INFO     | models.bert.threat_classifier:__init__:23 - Loaded model: bert-base-uncased
+2025-02-16 16:51:14.069 | INFO     | __main__:train_model:53 - Using device: cpu
+2025-02-16 16:51:14.953 | INFO     | __main__:train_model:119 - Starting training...
+2025-02-16 16:51:44.217 | INFO     | models.bert.threat_classifier:save_model:198 - Model saved to models/saved/best_model
+2025-02-16 16:51:44.220 | INFO     | __main__:train_model:209 - Saved best model with F1 score: 0.0422
+2025-02-16 16:51:44.220 | INFO     | __main__:train_model:226 - Epoch 1/10
+2025-02-16 16:51:44.220 | INFO     | __main__:train_model:227 - Average training loss: 2.3336
+2025-02-16 16:51:44.221 | INFO     | __main__:train_model:228 - Accuracy: 0.1000
+2025-02-16 16:51:44.221 | INFO     | __main__:train_model:229 - F1 Score: 0.0422
+2025-02-16 16:52:13.900 | INFO     | models.bert.threat_classifier:save_model:198 - Model saved to models/saved/best_model
+2025-02-16 16:52:13.902 | INFO     | __main__:train_model:209 - Saved best model with F1 score: 0.2000
+2025-02-16 16:52:13.902 | INFO     | __main__:train_model:226 - Epoch 2/10
+2025-02-16 16:52:13.902 | INFO     | __main__:train_model:227 - Average training loss: 2.1703
+2025-02-16 16:52:13.902 | INFO     | __main__:train_model:228 - Accuracy: 0.2500
+2025-02-16 16:52:13.902 | INFO     | __main__:train_model:229 - F1 Score: 0.2000
+2025-02-16 17:08:37.780 | INFO     | __main__:train_model:44 - No training data found. Adding sample data...
+2025-02-16 17:08:37.781 | INFO     | models.bert.data_manager:add_training_data:78 - Added 10 entries to malware category (0 invalid entries skipped)
+2025-02-16 17:08:37.781 | INFO     | models.bert.data_manager:add_training_data:78 - Added 10 entries to phishing category (0 invalid entries skipped)
+2025-02-16 17:08:37.782 | INFO     | models.bert.data_manager:add_training_data:78 - Added 10 entries to ddos category (0 invalid entries skipped)
+2025-02-16 17:08:37.782 | INFO     | models.bert.data_manager:add_training_data:78 - Added 10 entries to zero_day category (0 invalid entries skipped)
+2025-02-16 17:08:37.782 | INFO     | models.bert.data_manager:add_training_data:78 - Added 10 entries to apt category (0 invalid entries skipped)
+2025-02-16 17:08:37.783 | INFO     | models.bert.data_manager:add_training_data:78 - Added 10 entries to web_attack category (0 invalid entries skipped)
+2025-02-16 17:08:37.783 | INFO     | models.bert.data_manager:add_training_data:78 - Added 10 entries to insider_threat category (0 invalid entries skipped)
+2025-02-16 17:08:37.783 | INFO     | models.bert.data_manager:add_training_data:78 - Added 10 entries to data_breach category (0 invalid entries skipped)
+2025-02-16 17:08:37.783 | INFO     | models.bert.data_manager:add_training_data:78 - Added 10 entries to ransomware category (0 invalid entries skipped)
+2025-02-16 17:08:37.784 | INFO     | models.bert.data_manager:add_training_data:78 - Added 10 entries to social_engineering category (0 invalid entries skipped)
+2025-02-16 17:08:37.784 | INFO     | models.bert.data_manager:add_sample_data:353 - Added 100 sample entries across 10 categories
+2025-02-16 17:08:37.785 | INFO     | __main__:train_model:47 - Added sample data. Total samples: 100
+2025-02-16 17:08:37.785 | INFO     | models.bert.data_manager:load_training_data:123 - Loaded 10 valid entries from apt.jsonl
+2025-02-16 17:08:37.786 | INFO     | models.bert.data_manager:load_training_data:123 - Loaded 10 valid entries from data_breach.jsonl
+2025-02-16 17:08:37.786 | INFO     | models.bert.data_manager:load_training_data:123 - Loaded 10 valid entries from ddos.jsonl
+2025-02-16 17:08:37.786 | INFO     | models.bert.data_manager:load_training_data:123 - Loaded 10 valid entries from insider_threat.jsonl
+2025-02-16 17:08:37.787 | INFO     | models.bert.data_manager:load_training_data:123 - Loaded 10 valid entries from malware.jsonl
+2025-02-16 17:08:37.787 | INFO     | models.bert.data_manager:load_training_data:123 - Loaded 10 valid entries from phishing.jsonl
+2025-02-16 17:08:37.787 | INFO     | models.bert.data_manager:load_training_data:123 - Loaded 10 valid entries from ransomware.jsonl
+2025-02-16 17:08:37.787 | INFO     | models.bert.data_manager:load_training_data:123 - Loaded 10 valid entries from social_engineering.jsonl
+2025-02-16 17:08:37.788 | INFO     | models.bert.data_manager:load_training_data:123 - Loaded 10 valid entries from web_attack.jsonl
+2025-02-16 17:08:37.788 | INFO     | models.bert.data_manager:load_training_data:123 - Loaded 10 valid entries from zero_day.jsonl
+2025-02-16 17:08:37.788 | INFO     | models.bert.data_manager:load_training_data:129 - Saved category mapping with 10 categories
+2025-02-16 17:08:37.794 | INFO     | models.bert.data_manager:prepare_training_data:156 - Split data into 80 training and 20 test samples
+2025-02-16 17:08:37.794 | INFO     | models.bert.threat_classifier:__init__:13 - Using device: cpu
+2025-02-16 17:08:43.958 | INFO     | models.bert.threat_classifier:__init__:17 - Loaded tokenizer: microsoft/codebert-base
+2025-02-16 17:10:06.496 | ERROR    | models.bert.threat_classifier:__init__:35 - Error initializing model: 'RobertaClassificationHead' object has no attribute 'weight'
+2025-02-16 17:10:06.497 | ERROR    | __main__:train_model:305 - Error in training: 'RobertaClassificationHead' object has no attribute 'weight'
+2025-02-16 17:10:06.497 | ERROR    | __main__:<module>:333 - Training failed: 'RobertaClassificationHead' object has no attribute 'weight'
+2025-03-26 09:27:00.303 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from apt.jsonl
+2025-03-26 09:27:00.305 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from data_breach.jsonl
+2025-03-26 09:27:00.305 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from ddos.jsonl
+2025-03-26 09:27:00.305 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from insider_threat.jsonl
+2025-03-26 09:27:00.306 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from malware.jsonl
+2025-03-26 09:27:00.306 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from phishing.jsonl
+2025-03-26 09:27:00.306 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from ransomware.jsonl
+2025-03-26 09:27:00.306 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from social_engineering.jsonl
+2025-03-26 09:27:00.307 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from web_attack.jsonl
+2025-03-26 09:27:00.307 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from zero_day.jsonl
+2025-03-26 09:27:00.307 | INFO     | models.bert.data_manager:load_training_data:210 - Saved category mapping with 10 categories
+2025-03-26 09:27:00.312 | INFO     | models.bert.data_manager:prepare_training_data:237 - Split data into 80 training and 20 test samples
+2025-03-26 09:27:00.312 | INFO     | models.bert.threat_classifier:__init__:27 - Using device: cpu
+2025-03-26 09:27:00.313 | INFO     | models.bert.threat_classifier:__init__:39 - Loading saved model from /Users/anuragch/Desktop/Ad 4-2 2/models/bert/saved_model
+2025-03-26 09:27:00.769 | INFO     | __main__:train_model:57 - Using device: cpu
+2025-03-26 09:27:00.778 | ERROR    | __main__:train_model:312 - Error in training: 'RobertaForSequenceClassification' object has no attribute 'bert'
+2025-03-26 09:27:00.778 | ERROR    | __main__:<module>:340 - Training failed: 'RobertaForSequenceClassification' object has no attribute 'bert'
+2025-03-26 09:27:26.824 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from apt.jsonl
+2025-03-26 09:27:26.825 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from data_breach.jsonl
+2025-03-26 09:27:26.825 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from ddos.jsonl
+2025-03-26 09:27:26.825 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from insider_threat.jsonl
+2025-03-26 09:27:26.826 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from malware.jsonl
+2025-03-26 09:27:26.826 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from phishing.jsonl
+2025-03-26 09:27:26.826 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from ransomware.jsonl
+2025-03-26 09:27:26.826 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from social_engineering.jsonl
+2025-03-26 09:27:26.827 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from web_attack.jsonl
+2025-03-26 09:27:26.827 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from zero_day.jsonl
+2025-03-26 09:27:26.827 | INFO     | models.bert.data_manager:load_training_data:210 - Saved category mapping with 10 categories
+2025-03-26 09:27:26.829 | INFO     | models.bert.data_manager:prepare_training_data:237 - Split data into 80 training and 20 test samples
+2025-03-26 09:27:26.829 | INFO     | models.bert.threat_classifier:__init__:27 - Using device: cpu
+2025-03-26 09:27:26.829 | INFO     | models.bert.threat_classifier:__init__:39 - Loading saved model from /Users/anuragch/Desktop/Ad 4-2 2/models/bert/saved_model
+2025-03-26 09:27:27.201 | INFO     | __main__:train_model:57 - Using device: cpu
+2025-03-26 09:27:28.169 | INFO     | __main__:train_model:134 - Starting training...
+2025-03-26 09:27:29.163 | ERROR    | __main__:train_model:170 - Error in training batch: Target 5 is out of bounds.
+2025-03-26 09:27:29.600 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:27:30.002 | ERROR    | __main__:train_model:170 - Error in training batch: Target 6 is out of bounds.
+2025-03-26 09:27:30.444 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:27:30.851 | ERROR    | __main__:train_model:170 - Error in training batch: Target 5 is out of bounds.
+2025-03-26 09:27:31.387 | ERROR    | __main__:train_model:170 - Error in training batch: Target 7 is out of bounds.
+2025-03-26 09:27:31.801 | ERROR    | __main__:train_model:170 - Error in training batch: Target 6 is out of bounds.
+2025-03-26 09:27:32.211 | ERROR    | __main__:train_model:170 - Error in training batch: Target 7 is out of bounds.
+2025-03-26 09:27:32.610 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:27:33.015 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:27:34.962 | INFO     | models.bert.threat_classifier:save_model:253 - Model saved to models/saved/best_model
+2025-03-26 09:27:34.963 | INFO     | __main__:train_model:225 - Saved best model with F1 score: 0.0182
+2025-03-26 09:27:34.963 | INFO     | __main__:train_model:242 - Epoch 1/20
+2025-03-26 09:27:34.963 | INFO     | __main__:train_model:243 - Average training loss: inf
+2025-03-26 09:27:34.963 | INFO     | __main__:train_model:244 - Accuracy: 0.0500
+2025-03-26 09:27:34.964 | INFO     | __main__:train_model:245 - F1 Score: 0.0182
+2025-03-26 09:27:34.964 | INFO     | __main__:train_model:246 - Learning rates: [3.9999999999999956e-07, 4.000000000000002e-06]
+2025-03-26 09:27:35.393 | ERROR    | __main__:train_model:170 - Error in training batch: Target 5 is out of bounds.
+2025-03-26 09:27:35.995 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:27:36.462 | ERROR    | __main__:train_model:170 - Error in training batch: Target 7 is out of bounds.
+2025-03-26 09:27:36.922 | ERROR    | __main__:train_model:170 - Error in training batch: Target 6 is out of bounds.
+2025-03-26 09:27:37.343 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:27:37.802 | ERROR    | __main__:train_model:170 - Error in training batch: Target 5 is out of bounds.
+2025-03-26 09:27:38.206 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:27:38.626 | ERROR    | __main__:train_model:170 - Error in training batch: Target 6 is out of bounds.
+2025-03-26 09:27:39.033 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:27:39.558 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:27:40.562 | INFO     | __main__:train_model:242 - Epoch 2/20
+2025-03-26 09:27:40.562 | INFO     | __main__:train_model:243 - Average training loss: inf
+2025-03-26 09:27:40.563 | INFO     | __main__:train_model:244 - Accuracy: 0.0500
+2025-03-26 09:27:40.563 | INFO     | __main__:train_model:245 - F1 Score: 0.0182
+2025-03-26 09:27:40.564 | INFO     | __main__:train_model:246 - Learning rates: [3.9999999999999956e-07, 4.000000000000002e-06]
+2025-03-26 09:27:40.974 | ERROR    | __main__:train_model:170 - Error in training batch: Target 6 is out of bounds.
+2025-03-26 09:27:41.375 | ERROR    | __main__:train_model:170 - Error in training batch: Target 5 is out of bounds.
+2025-03-26 09:27:41.781 | ERROR    | __main__:train_model:170 - Error in training batch: Target 6 is out of bounds.
+2025-03-26 09:27:42.180 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:27:42.586 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:27:42.986 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:27:43.384 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:27:43.784 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:27:44.209 | ERROR    | __main__:train_model:170 - Error in training batch: Target 6 is out of bounds.
+2025-03-26 09:27:44.633 | ERROR    | __main__:train_model:170 - Error in training batch: Target 5 is out of bounds.
+2025-03-26 09:27:45.634 | INFO     | __main__:train_model:242 - Epoch 3/20
+2025-03-26 09:27:45.634 | INFO     | __main__:train_model:243 - Average training loss: inf
+2025-03-26 09:27:45.634 | INFO     | __main__:train_model:244 - Accuracy: 0.0500
+2025-03-26 09:27:45.635 | INFO     | __main__:train_model:245 - F1 Score: 0.0182
+2025-03-26 09:27:45.635 | INFO     | __main__:train_model:246 - Learning rates: [3.9999999999999956e-07, 4.000000000000002e-06]
+2025-03-26 09:27:46.047 | ERROR    | __main__:train_model:170 - Error in training batch: Target 7 is out of bounds.
+2025-03-26 09:27:46.442 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:27:46.844 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:27:47.248 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:27:47.708 | ERROR    | __main__:train_model:170 - Error in training batch: Target 7 is out of bounds.
+2025-03-26 09:27:48.179 | ERROR    | __main__:train_model:170 - Error in training batch: Target 6 is out of bounds.
+2025-03-26 09:27:48.674 | ERROR    | __main__:train_model:170 - Error in training batch: Target 7 is out of bounds.
+2025-03-26 09:27:49.119 | ERROR    | __main__:train_model:170 - Error in training batch: Target 5 is out of bounds.
+2025-03-26 09:27:49.521 | ERROR    | __main__:train_model:170 - Error in training batch: Target 6 is out of bounds.
+2025-03-26 09:27:49.916 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:27:50.774 | INFO     | __main__:train_model:242 - Epoch 4/20
+2025-03-26 09:27:50.775 | INFO     | __main__:train_model:243 - Average training loss: inf
+2025-03-26 09:27:50.775 | INFO     | __main__:train_model:244 - Accuracy: 0.0500
+2025-03-26 09:27:50.775 | INFO     | __main__:train_model:245 - F1 Score: 0.0182
+2025-03-26 09:27:50.776 | INFO     | __main__:train_model:246 - Learning rates: [3.9999999999999956e-07, 4.000000000000002e-06]
+2025-03-26 09:27:51.183 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:27:51.586 | ERROR    | __main__:train_model:170 - Error in training batch: Target 7 is out of bounds.
+2025-03-26 09:27:51.983 | ERROR    | __main__:train_model:170 - Error in training batch: Target 7 is out of bounds.
+2025-03-26 09:27:52.382 | ERROR    | __main__:train_model:170 - Error in training batch: Target 5 is out of bounds.
+2025-03-26 09:27:52.783 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:27:53.190 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:27:53.604 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:27:53.998 | ERROR    | __main__:train_model:170 - Error in training batch: Target 6 is out of bounds.
+2025-03-26 09:27:54.425 | ERROR    | __main__:train_model:170 - Error in training batch: Target 5 is out of bounds.
+2025-03-26 09:27:54.837 | ERROR    | __main__:train_model:170 - Error in training batch: Target 5 is out of bounds.
+2025-03-26 09:27:55.748 | INFO     | __main__:train_model:242 - Epoch 5/20
+2025-03-26 09:27:55.748 | INFO     | __main__:train_model:243 - Average training loss: inf
+2025-03-26 09:27:55.749 | INFO     | __main__:train_model:244 - Accuracy: 0.0500
+2025-03-26 09:27:55.749 | INFO     | __main__:train_model:245 - F1 Score: 0.0182
+2025-03-26 09:27:55.749 | INFO     | __main__:train_model:246 - Learning rates: [3.9999999999999956e-07, 4.000000000000002e-06]
+2025-03-26 09:27:56.160 | ERROR    | __main__:train_model:170 - Error in training batch: Target 6 is out of bounds.
+2025-03-26 09:27:56.581 | ERROR    | __main__:train_model:170 - Error in training batch: Target 7 is out of bounds.
+2025-03-26 09:27:56.994 | ERROR    | __main__:train_model:170 - Error in training batch: Target 5 is out of bounds.
+2025-03-26 09:27:57.399 | ERROR    | __main__:train_model:170 - Error in training batch: Target 7 is out of bounds.
+2025-03-26 09:27:57.808 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:27:58.200 | ERROR    | __main__:train_model:170 - Error in training batch: Target 7 is out of bounds.
+2025-03-26 09:27:58.595 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:27:59.011 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:27:59.431 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:27:59.834 | ERROR    | __main__:train_model:170 - Error in training batch: Target 6 is out of bounds.
+2025-03-26 09:28:00.716 | INFO     | __main__:train_model:242 - Epoch 6/20
+2025-03-26 09:28:00.717 | INFO     | __main__:train_model:243 - Average training loss: inf
+2025-03-26 09:28:00.717 | INFO     | __main__:train_model:244 - Accuracy: 0.0500
+2025-03-26 09:28:00.717 | INFO     | __main__:train_model:245 - F1 Score: 0.0182
+2025-03-26 09:28:00.718 | INFO     | __main__:train_model:246 - Learning rates: [3.9999999999999956e-07, 4.000000000000002e-06]
+2025-03-26 09:28:01.126 | ERROR    | __main__:train_model:170 - Error in training batch: Target 5 is out of bounds.
+2025-03-26 09:28:01.533 | ERROR    | __main__:train_model:170 - Error in training batch: Target 5 is out of bounds.
+2025-03-26 09:28:01.938 | ERROR    | __main__:train_model:170 - Error in training batch: Target 6 is out of bounds.
+2025-03-26 09:28:02.336 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:28:02.736 | ERROR    | __main__:train_model:170 - Error in training batch: Target 5 is out of bounds.
+2025-03-26 09:28:03.136 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:28:03.538 | ERROR    | __main__:train_model:170 - Error in training batch: Target 7 is out of bounds.
+2025-03-26 09:28:03.939 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:28:04.356 | ERROR    | __main__:train_model:170 - Error in training batch: Target 7 is out of bounds.
+2025-03-26 09:28:04.764 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:28:05.795 | INFO     | __main__:train_model:242 - Epoch 7/20
+2025-03-26 09:28:05.796 | INFO     | __main__:train_model:243 - Average training loss: inf
+2025-03-26 09:28:05.797 | INFO     | __main__:train_model:244 - Accuracy: 0.0500
+2025-03-26 09:28:05.797 | INFO     | __main__:train_model:245 - F1 Score: 0.0182
+2025-03-26 09:28:05.797 | INFO     | __main__:train_model:246 - Learning rates: [3.9999999999999956e-07, 4.000000000000002e-06]
+2025-03-26 09:28:06.321 | ERROR    | __main__:train_model:170 - Error in training batch: Target 5 is out of bounds.
+2025-03-26 09:28:06.840 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:28:07.357 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:28:07.880 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:28:08.409 | ERROR    | __main__:train_model:170 - Error in training batch: Target 6 is out of bounds.
+2025-03-26 09:28:08.940 | ERROR    | __main__:train_model:170 - Error in training batch: Target 6 is out of bounds.
+2025-03-26 09:28:09.474 | ERROR    | __main__:train_model:170 - Error in training batch: Target 6 is out of bounds.
+2025-03-26 09:28:09.999 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:28:10.532 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:28:11.058 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:28:12.185 | INFO     | __main__:train_model:236 - Early stopping triggered after 8 epochs
+2025-03-26 09:28:12.193 | INFO     | __main__:train_model:305 - Saved training results to models/saved/training_results.json
+2025-03-26 09:28:12.194 | INFO     | __main__:<module>:329 - Training completed!
+2025-03-26 09:28:12.194 | INFO     | __main__:<module>:330 - Best accuracy: 0.0500
+2025-03-26 09:28:12.194 | INFO     | __main__:<module>:331 - Best F1 score: 0.0182
+2025-03-26 09:28:12.195 | INFO     | __main__:<module>:332 - 
+Classification Report:
+2025-03-26 09:28:12.195 | INFO     | __main__:<module>:335 - 
+apt:
+2025-03-26 09:28:12.195 | INFO     | __main__:<module>:336 - Precision: 0.1111
+2025-03-26 09:28:12.195 | INFO     | __main__:<module>:337 - Recall: 0.5000
+2025-03-26 09:28:12.195 | INFO     | __main__:<module>:338 - F1-score: 0.1818
+2025-03-26 09:28:12.196 | INFO     | __main__:<module>:335 - 
+data_breach:
+2025-03-26 09:28:12.196 | INFO     | __main__:<module>:336 - Precision: 0.0000
+2025-03-26 09:28:12.196 | INFO     | __main__:<module>:337 - Recall: 0.0000
+2025-03-26 09:28:12.196 | INFO     | __main__:<module>:338 - F1-score: 0.0000
+2025-03-26 09:28:12.196 | INFO     | __main__:<module>:335 - 
+ddos:
+2025-03-26 09:28:12.197 | INFO     | __main__:<module>:336 - Precision: 0.0000
+2025-03-26 09:28:12.197 | INFO     | __main__:<module>:337 - Recall: 0.0000
+2025-03-26 09:28:12.197 | INFO     | __main__:<module>:338 - F1-score: 0.0000
+2025-03-26 09:28:12.197 | INFO     | __main__:<module>:335 - 
+insider_threat:
+2025-03-26 09:28:12.197 | INFO     | __main__:<module>:336 - Precision: 0.0000
+2025-03-26 09:28:12.198 | INFO     | __main__:<module>:337 - Recall: 0.0000
+2025-03-26 09:28:12.198 | INFO     | __main__:<module>:338 - F1-score: 0.0000
+2025-03-26 09:28:12.198 | INFO     | __main__:<module>:335 - 
+malware:
+2025-03-26 09:28:12.199 | INFO     | __main__:<module>:336 - Precision: 0.0000
+2025-03-26 09:28:12.199 | INFO     | __main__:<module>:337 - Recall: 0.0000
+2025-03-26 09:28:12.199 | INFO     | __main__:<module>:338 - F1-score: 0.0000
+2025-03-26 09:28:12.199 | INFO     | __main__:<module>:335 - 
+phishing:
+2025-03-26 09:28:12.199 | INFO     | __main__:<module>:336 - Precision: 0.0000
+2025-03-26 09:28:12.200 | INFO     | __main__:<module>:337 - Recall: 0.0000
+2025-03-26 09:28:12.200 | INFO     | __main__:<module>:338 - F1-score: 0.0000
+2025-03-26 09:28:12.200 | INFO     | __main__:<module>:335 - 
+ransomware:
+2025-03-26 09:28:12.201 | INFO     | __main__:<module>:336 - Precision: 0.0000
+2025-03-26 09:28:12.201 | INFO     | __main__:<module>:337 - Recall: 0.0000
+2025-03-26 09:28:12.201 | INFO     | __main__:<module>:338 - F1-score: 0.0000
+2025-03-26 09:28:12.201 | INFO     | __main__:<module>:335 - 
+social_engineering:
+2025-03-26 09:28:12.201 | INFO     | __main__:<module>:336 - Precision: 0.0000
+2025-03-26 09:28:12.202 | INFO     | __main__:<module>:337 - Recall: 0.0000
+2025-03-26 09:28:12.202 | INFO     | __main__:<module>:338 - F1-score: 0.0000
+2025-03-26 09:28:12.202 | INFO     | __main__:<module>:335 - 
+web_attack:
+2025-03-26 09:28:12.202 | INFO     | __main__:<module>:336 - Precision: 0.0000
+2025-03-26 09:28:12.202 | INFO     | __main__:<module>:337 - Recall: 0.0000
+2025-03-26 09:28:12.203 | INFO     | __main__:<module>:338 - F1-score: 0.0000
+2025-03-26 09:28:12.203 | INFO     | __main__:<module>:335 - 
+zero_day:
+2025-03-26 09:28:12.203 | INFO     | __main__:<module>:336 - Precision: 0.0000
+2025-03-26 09:28:12.203 | INFO     | __main__:<module>:337 - Recall: 0.0000
+2025-03-26 09:28:12.203 | INFO     | __main__:<module>:338 - F1-score: 0.0000
+2025-03-26 09:28:12.203 | INFO     | __main__:<module>:335 - 
+macro avg:
+2025-03-26 09:28:12.204 | INFO     | __main__:<module>:336 - Precision: 0.0111
+2025-03-26 09:28:12.204 | INFO     | __main__:<module>:337 - Recall: 0.0500
+2025-03-26 09:28:12.204 | INFO     | __main__:<module>:338 - F1-score: 0.0182
+2025-03-26 09:28:12.204 | INFO     | __main__:<module>:335 - 
+weighted avg:
+2025-03-26 09:28:12.204 | INFO     | __main__:<module>:336 - Precision: 0.0111
+2025-03-26 09:28:12.204 | INFO     | __main__:<module>:337 - Recall: 0.0500
+2025-03-26 09:28:12.205 | INFO     | __main__:<module>:338 - F1-score: 0.0182
+2025-03-26 09:28:31.734 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from apt.jsonl
+2025-03-26 09:28:31.735 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from data_breach.jsonl
+2025-03-26 09:28:31.736 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from ddos.jsonl
+2025-03-26 09:28:31.736 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from insider_threat.jsonl
+2025-03-26 09:28:31.736 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from malware.jsonl
+2025-03-26 09:28:31.737 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from phishing.jsonl
+2025-03-26 09:28:31.737 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from ransomware.jsonl
+2025-03-26 09:28:31.737 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from social_engineering.jsonl
+2025-03-26 09:28:31.737 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from web_attack.jsonl
+2025-03-26 09:28:31.738 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from zero_day.jsonl
+2025-03-26 09:28:31.738 | INFO     | models.bert.data_manager:load_training_data:210 - Saved category mapping with 10 categories
+2025-03-26 09:28:31.739 | INFO     | models.bert.data_manager:prepare_training_data:237 - Split data into 80 training and 20 test samples
+2025-03-26 09:28:31.740 | INFO     | models.bert.threat_classifier:__init__:27 - Using device: cpu
+2025-03-26 09:28:31.740 | INFO     | models.bert.threat_classifier:__init__:39 - Loading saved model from /Users/anuragch/Desktop/Ad 4-2 2/models/bert/saved_model
+2025-03-26 09:28:32.147 | INFO     | __main__:train_model:57 - Using device: cpu
+2025-03-26 09:28:32.909 | INFO     | __main__:train_model:134 - Starting training...
+2025-03-26 09:28:33.857 | ERROR    | __main__:train_model:170 - Error in training batch: Target 6 is out of bounds.
+2025-03-26 09:28:34.306 | ERROR    | __main__:train_model:170 - Error in training batch: Target 7 is out of bounds.
+2025-03-26 09:28:34.717 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:28:35.131 | ERROR    | __main__:train_model:170 - Error in training batch: Target 5 is out of bounds.
+2025-03-26 09:28:35.542 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:28:35.950 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:28:36.351 | ERROR    | __main__:train_model:170 - Error in training batch: Target 6 is out of bounds.
+2025-03-26 09:28:36.761 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:28:37.173 | ERROR    | __main__:train_model:170 - Error in training batch: Target 5 is out of bounds.
+2025-03-26 09:28:37.581 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:28:39.563 | INFO     | models.bert.threat_classifier:save_model:258 - Model saved to models/saved/best_model
+2025-03-26 09:28:39.564 | INFO     | __main__:train_model:225 - Saved best model with F1 score: 0.0182
+2025-03-26 09:28:39.564 | INFO     | __main__:train_model:242 - Epoch 1/20
+2025-03-26 09:28:39.564 | INFO     | __main__:train_model:243 - Average training loss: inf
+2025-03-26 09:28:39.564 | INFO     | __main__:train_model:244 - Accuracy: 0.0500
+2025-03-26 09:28:39.565 | INFO     | __main__:train_model:245 - F1 Score: 0.0182
+2025-03-26 09:28:39.565 | INFO     | __main__:train_model:246 - Learning rates: [3.9999999999999956e-07, 4.000000000000002e-06]
+2025-03-26 09:28:39.891 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:28:40.386 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:28:40.897 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:28:41.309 | ERROR    | __main__:train_model:170 - Error in training batch: Target 6 is out of bounds.
+2025-03-26 09:28:41.712 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:28:42.114 | ERROR    | __main__:train_model:170 - Error in training batch: Target 7 is out of bounds.
+2025-03-26 09:28:42.518 | ERROR    | __main__:train_model:170 - Error in training batch: Target 6 is out of bounds.
+2025-03-26 09:28:42.913 | ERROR    | __main__:train_model:170 - Error in training batch: Target 6 is out of bounds.
+2025-03-26 09:28:43.314 | ERROR    | __main__:train_model:170 - Error in training batch: Target 7 is out of bounds.
+2025-03-26 09:28:43.719 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:28:44.609 | INFO     | __main__:train_model:242 - Epoch 2/20
+2025-03-26 09:28:44.609 | INFO     | __main__:train_model:243 - Average training loss: inf
+2025-03-26 09:28:44.610 | INFO     | __main__:train_model:244 - Accuracy: 0.0500
+2025-03-26 09:28:44.610 | INFO     | __main__:train_model:245 - F1 Score: 0.0182
+2025-03-26 09:28:44.610 | INFO     | __main__:train_model:246 - Learning rates: [3.9999999999999956e-07, 4.000000000000002e-06]
+2025-03-26 09:28:45.036 | ERROR    | __main__:train_model:170 - Error in training batch: Target 6 is out of bounds.
+2025-03-26 09:28:45.432 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:28:45.838 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:28:46.236 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:28:46.638 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:28:47.036 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:28:47.431 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:28:47.841 | ERROR    | __main__:train_model:170 - Error in training batch: Target 5 is out of bounds.
+2025-03-26 09:28:48.242 | ERROR    | __main__:train_model:170 - Error in training batch: Target 5 is out of bounds.
+2025-03-26 09:28:48.648 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:28:49.528 | INFO     | __main__:train_model:242 - Epoch 3/20
+2025-03-26 09:28:49.529 | INFO     | __main__:train_model:243 - Average training loss: inf
+2025-03-26 09:28:49.529 | INFO     | __main__:train_model:244 - Accuracy: 0.0500
+2025-03-26 09:28:49.529 | INFO     | __main__:train_model:245 - F1 Score: 0.0182
+2025-03-26 09:28:49.529 | INFO     | __main__:train_model:246 - Learning rates: [3.9999999999999956e-07, 4.000000000000002e-06]
+2025-03-26 09:28:49.943 | ERROR    | __main__:train_model:170 - Error in training batch: Target 6 is out of bounds.
+2025-03-26 09:28:50.349 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:28:50.774 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:28:51.194 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:28:51.594 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:28:51.995 | ERROR    | __main__:train_model:170 - Error in training batch: Target 7 is out of bounds.
+2025-03-26 09:28:52.422 | ERROR    | __main__:train_model:170 - Error in training batch: Target 6 is out of bounds.
+2025-03-26 09:28:52.827 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:28:53.223 | ERROR    | __main__:train_model:170 - Error in training batch: Target 5 is out of bounds.
+2025-03-26 09:28:53.622 | ERROR    | __main__:train_model:170 - Error in training batch: Target 7 is out of bounds.
+2025-03-26 09:28:54.493 | INFO     | __main__:train_model:242 - Epoch 4/20
+2025-03-26 09:28:54.493 | INFO     | __main__:train_model:243 - Average training loss: inf
+2025-03-26 09:28:54.494 | INFO     | __main__:train_model:244 - Accuracy: 0.0500
+2025-03-26 09:28:54.494 | INFO     | __main__:train_model:245 - F1 Score: 0.0182
+2025-03-26 09:28:54.494 | INFO     | __main__:train_model:246 - Learning rates: [3.9999999999999956e-07, 4.000000000000002e-06]
+2025-03-26 09:28:54.936 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:28:55.403 | ERROR    | __main__:train_model:170 - Error in training batch: Target 5 is out of bounds.
+2025-03-26 09:28:55.988 | ERROR    | __main__:train_model:170 - Error in training batch: Target 7 is out of bounds.
+2025-03-26 09:28:56.685 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:28:57.217 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:28:57.705 | ERROR    | __main__:train_model:170 - Error in training batch: Target 6 is out of bounds.
+2025-03-26 09:28:58.204 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:28:58.779 | ERROR    | __main__:train_model:170 - Error in training batch: Target 7 is out of bounds.
+2025-03-26 09:28:59.463 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:28:59.968 | ERROR    | __main__:train_model:170 - Error in training batch: Target 6 is out of bounds.
+2025-03-26 09:29:01.124 | INFO     | __main__:train_model:242 - Epoch 5/20
+2025-03-26 09:29:01.125 | INFO     | __main__:train_model:243 - Average training loss: inf
+2025-03-26 09:29:01.125 | INFO     | __main__:train_model:244 - Accuracy: 0.0500
+2025-03-26 09:29:01.125 | INFO     | __main__:train_model:245 - F1 Score: 0.0182
+2025-03-26 09:29:01.126 | INFO     | __main__:train_model:246 - Learning rates: [3.9999999999999956e-07, 4.000000000000002e-06]
+2025-03-26 09:29:01.605 | ERROR    | __main__:train_model:170 - Error in training batch: Target 7 is out of bounds.
+2025-03-26 09:29:02.035 | ERROR    | __main__:train_model:170 - Error in training batch: Target 7 is out of bounds.
+2025-03-26 09:29:02.440 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:29:02.844 | ERROR    | __main__:train_model:170 - Error in training batch: Target 5 is out of bounds.
+2025-03-26 09:29:03.272 | ERROR    | __main__:train_model:170 - Error in training batch: Target 6 is out of bounds.
+2025-03-26 09:29:03.697 | ERROR    | __main__:train_model:170 - Error in training batch: Target 6 is out of bounds.
+2025-03-26 09:29:04.145 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:29:04.588 | ERROR    | __main__:train_model:170 - Error in training batch: Target 7 is out of bounds.
+2025-03-26 09:29:05.022 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:29:05.440 | ERROR    | __main__:train_model:170 - Error in training batch: Target 5 is out of bounds.
+2025-03-26 09:29:06.535 | INFO     | __main__:train_model:242 - Epoch 6/20
+2025-03-26 09:29:06.535 | INFO     | __main__:train_model:243 - Average training loss: inf
+2025-03-26 09:29:06.536 | INFO     | __main__:train_model:244 - Accuracy: 0.0500
+2025-03-26 09:29:06.536 | INFO     | __main__:train_model:245 - F1 Score: 0.0182
+2025-03-26 09:29:06.536 | INFO     | __main__:train_model:246 - Learning rates: [3.9999999999999956e-07, 4.000000000000002e-06]
+2025-03-26 09:29:07.007 | ERROR    | __main__:train_model:170 - Error in training batch: Target 5 is out of bounds.
+2025-03-26 09:29:07.455 | ERROR    | __main__:train_model:170 - Error in training batch: Target 7 is out of bounds.
+2025-03-26 09:29:07.908 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:29:08.370 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:29:08.858 | ERROR    | __main__:train_model:170 - Error in training batch: Target 7 is out of bounds.
+2025-03-26 09:29:09.312 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:29:09.759 | ERROR    | __main__:train_model:170 - Error in training batch: Target 7 is out of bounds.
+2025-03-26 09:29:10.217 | ERROR    | __main__:train_model:170 - Error in training batch: Target 7 is out of bounds.
+2025-03-26 09:29:10.661 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:29:11.126 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:29:11.999 | INFO     | __main__:train_model:242 - Epoch 7/20
+2025-03-26 09:29:11.999 | INFO     | __main__:train_model:243 - Average training loss: inf
+2025-03-26 09:29:11.999 | INFO     | __main__:train_model:244 - Accuracy: 0.0500
+2025-03-26 09:29:11.999 | INFO     | __main__:train_model:245 - F1 Score: 0.0182
+2025-03-26 09:29:12.000 | INFO     | __main__:train_model:246 - Learning rates: [3.9999999999999956e-07, 4.000000000000002e-06]
+2025-03-26 09:29:12.415 | ERROR    | __main__:train_model:170 - Error in training batch: Target 6 is out of bounds.
+2025-03-26 09:29:12.815 | ERROR    | __main__:train_model:170 - Error in training batch: Target 5 is out of bounds.
+2025-03-26 09:29:13.222 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:29:13.632 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:29:14.053 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:29:14.469 | ERROR    | __main__:train_model:170 - Error in training batch: Target 8 is out of bounds.
+2025-03-26 09:29:14.884 | ERROR    | __main__:train_model:170 - Error in training batch: Target 6 is out of bounds.
+2025-03-26 09:29:15.288 | ERROR    | __main__:train_model:170 - Error in training batch: Target 6 is out of bounds.
+2025-03-26 09:29:15.697 | ERROR    | __main__:train_model:170 - Error in training batch: Target 7 is out of bounds.
+2025-03-26 09:29:16.108 | ERROR    | __main__:train_model:170 - Error in training batch: Target 9 is out of bounds.
+2025-03-26 09:29:16.975 | INFO     | __main__:train_model:236 - Early stopping triggered after 8 epochs
+2025-03-26 09:29:16.985 | INFO     | __main__:train_model:305 - Saved training results to models/saved/training_results.json
+2025-03-26 09:29:16.987 | INFO     | __main__:<module>:329 - Training completed!
+2025-03-26 09:29:16.987 | INFO     | __main__:<module>:330 - Best accuracy: 0.0500
+2025-03-26 09:29:16.988 | INFO     | __main__:<module>:331 - Best F1 score: 0.0182
+2025-03-26 09:29:16.988 | INFO     | __main__:<module>:332 - 
+Classification Report:
+2025-03-26 09:29:16.988 | INFO     | __main__:<module>:335 - 
+apt:
+2025-03-26 09:29:16.989 | INFO     | __main__:<module>:336 - Precision: 0.1111
+2025-03-26 09:29:16.989 | INFO     | __main__:<module>:337 - Recall: 0.5000
+2025-03-26 09:29:16.989 | INFO     | __main__:<module>:338 - F1-score: 0.1818
+2025-03-26 09:29:16.989 | INFO     | __main__:<module>:335 - 
+data_breach:
+2025-03-26 09:29:16.989 | INFO     | __main__:<module>:336 - Precision: 0.0000
+2025-03-26 09:29:16.989 | INFO     | __main__:<module>:337 - Recall: 0.0000
+2025-03-26 09:29:16.990 | INFO     | __main__:<module>:338 - F1-score: 0.0000
+2025-03-26 09:29:16.990 | INFO     | __main__:<module>:335 - 
+ddos:
+2025-03-26 09:29:16.990 | INFO     | __main__:<module>:336 - Precision: 0.0000
+2025-03-26 09:29:16.990 | INFO     | __main__:<module>:337 - Recall: 0.0000
+2025-03-26 09:29:16.991 | INFO     | __main__:<module>:338 - F1-score: 0.0000
+2025-03-26 09:29:16.991 | INFO     | __main__:<module>:335 - 
+insider_threat:
+2025-03-26 09:29:16.991 | INFO     | __main__:<module>:336 - Precision: 0.0000
+2025-03-26 09:29:16.991 | INFO     | __main__:<module>:337 - Recall: 0.0000
+2025-03-26 09:29:16.992 | INFO     | __main__:<module>:338 - F1-score: 0.0000
+2025-03-26 09:29:16.992 | INFO     | __main__:<module>:335 - 
+malware:
+2025-03-26 09:29:16.992 | INFO     | __main__:<module>:336 - Precision: 0.0000
+2025-03-26 09:29:16.992 | INFO     | __main__:<module>:337 - Recall: 0.0000
+2025-03-26 09:29:16.992 | INFO     | __main__:<module>:338 - F1-score: 0.0000
+2025-03-26 09:29:16.993 | INFO     | __main__:<module>:335 - 
+phishing:
+2025-03-26 09:29:16.993 | INFO     | __main__:<module>:336 - Precision: 0.0000
+2025-03-26 09:29:16.993 | INFO     | __main__:<module>:337 - Recall: 0.0000
+2025-03-26 09:29:16.993 | INFO     | __main__:<module>:338 - F1-score: 0.0000
+2025-03-26 09:29:16.993 | INFO     | __main__:<module>:335 - 
+ransomware:
+2025-03-26 09:29:16.994 | INFO     | __main__:<module>:336 - Precision: 0.0000
+2025-03-26 09:29:16.994 | INFO     | __main__:<module>:337 - Recall: 0.0000
+2025-03-26 09:29:16.994 | INFO     | __main__:<module>:338 - F1-score: 0.0000
+2025-03-26 09:29:16.994 | INFO     | __main__:<module>:335 - 
+social_engineering:
+2025-03-26 09:29:16.994 | INFO     | __main__:<module>:336 - Precision: 0.0000
+2025-03-26 09:29:16.995 | INFO     | __main__:<module>:337 - Recall: 0.0000
+2025-03-26 09:29:16.995 | INFO     | __main__:<module>:338 - F1-score: 0.0000
+2025-03-26 09:29:16.995 | INFO     | __main__:<module>:335 - 
+web_attack:
+2025-03-26 09:29:16.995 | INFO     | __main__:<module>:336 - Precision: 0.0000
+2025-03-26 09:29:16.996 | INFO     | __main__:<module>:337 - Recall: 0.0000
+2025-03-26 09:29:16.996 | INFO     | __main__:<module>:338 - F1-score: 0.0000
+2025-03-26 09:29:16.996 | INFO     | __main__:<module>:335 - 
+zero_day:
+2025-03-26 09:29:16.996 | INFO     | __main__:<module>:336 - Precision: 0.0000
+2025-03-26 09:29:16.996 | INFO     | __main__:<module>:337 - Recall: 0.0000
+2025-03-26 09:29:16.997 | INFO     | __main__:<module>:338 - F1-score: 0.0000
+2025-03-26 09:29:16.997 | INFO     | __main__:<module>:335 - 
+macro avg:
+2025-03-26 09:29:16.997 | INFO     | __main__:<module>:336 - Precision: 0.0111
+2025-03-26 09:29:16.997 | INFO     | __main__:<module>:337 - Recall: 0.0500
+2025-03-26 09:29:16.997 | INFO     | __main__:<module>:338 - F1-score: 0.0182
+2025-03-26 09:29:16.997 | INFO     | __main__:<module>:335 - 
+weighted avg:
+2025-03-26 09:29:16.998 | INFO     | __main__:<module>:336 - Precision: 0.0111
+2025-03-26 09:29:16.998 | INFO     | __main__:<module>:337 - Recall: 0.0500
+2025-03-26 09:29:16.998 | INFO     | __main__:<module>:338 - F1-score: 0.0182
+2025-03-26 09:31:57.823 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from apt.jsonl
+2025-03-26 09:31:57.825 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from data_breach.jsonl
+2025-03-26 09:31:57.826 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from ddos.jsonl
+2025-03-26 09:31:57.826 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from insider_threat.jsonl
+2025-03-26 09:31:57.826 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from malware.jsonl
+2025-03-26 09:31:57.827 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from phishing.jsonl
+2025-03-26 09:31:57.827 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from ransomware.jsonl
+2025-03-26 09:31:57.827 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from social_engineering.jsonl
+2025-03-26 09:31:57.827 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from web_attack.jsonl
+2025-03-26 09:31:57.828 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from zero_day.jsonl
+2025-03-26 09:31:57.828 | INFO     | models.bert.data_manager:load_training_data:210 - Saved category mapping with 10 categories
+2025-03-26 09:31:57.833 | INFO     | models.bert.data_manager:prepare_training_data:237 - Split data into 80 training and 20 test samples
+2025-03-26 09:31:57.833 | INFO     | models.bert.threat_classifier:__init__:27 - Using device: cpu
+2025-03-26 09:31:57.834 | INFO     | models.bert.threat_classifier:__init__:39 - Loading saved model from /Users/anuragch/Desktop/Ad 4-2 2/models/bert/saved_model
+2025-03-26 09:31:58.299 | INFO     | __main__:train_model:57 - Using device: cpu
+2025-03-26 09:31:58.316 | ERROR    | __main__:train_model:312 - Error in training: 'RobertaForSequenceClassification' object has no attribute 'deberta'
+2025-03-26 09:31:58.316 | ERROR    | __main__:<module>:340 - Training failed: 'RobertaForSequenceClassification' object has no attribute 'deberta'
+2025-03-26 09:32:47.824 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from apt.jsonl
+2025-03-26 09:32:47.824 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from data_breach.jsonl
+2025-03-26 09:32:47.825 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from ddos.jsonl
+2025-03-26 09:32:47.825 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from insider_threat.jsonl
+2025-03-26 09:32:47.826 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from malware.jsonl
+2025-03-26 09:32:47.826 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from phishing.jsonl
+2025-03-26 09:32:47.826 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from ransomware.jsonl
+2025-03-26 09:32:47.827 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from social_engineering.jsonl
+2025-03-26 09:32:47.827 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from web_attack.jsonl
+2025-03-26 09:32:47.828 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from zero_day.jsonl
+2025-03-26 09:32:47.828 | INFO     | models.bert.data_manager:load_training_data:210 - Saved category mapping with 10 categories
+2025-03-26 09:32:47.829 | INFO     | models.bert.data_manager:prepare_training_data:237 - Split data into 80 training and 20 test samples
+2025-03-26 09:32:47.830 | INFO     | models.bert.threat_classifier:__init__:27 - Using device: cpu
+2025-03-26 09:32:47.830 | INFO     | models.bert.threat_classifier:__init__:44 - Initializing new model with microsoft/deberta-v3-base
+2025-03-26 09:32:48.205 | ERROR    | __main__:train_model:312 - Error in training: Converting from Tiktoken failed, if a converter for SentencePiece is available, provide a model path with a SentencePiece tokenizer.model file.Currently available slow->fast convertors: ['AlbertTokenizer', 'BartTokenizer', 'BarthezTokenizer', 'BertTokenizer', 'BigBirdTokenizer', 'BlenderbotTokenizer', 'CamembertTokenizer', 'CLIPTokenizer', 'CodeGenTokenizer', 'ConvBertTokenizer', 'DebertaTokenizer', 'DebertaV2Tokenizer', 'DistilBertTokenizer', 'DPRReaderTokenizer', 'DPRQuestionEncoderTokenizer', 'DPRContextEncoderTokenizer', 'ElectraTokenizer', 'FNetTokenizer', 'FunnelTokenizer', 'GPT2Tokenizer', 'HerbertTokenizer', 'LayoutLMTokenizer', 'LayoutLMv2Tokenizer', 'LayoutLMv3Tokenizer', 'LayoutXLMTokenizer', 'LongformerTokenizer', 'LEDTokenizer', 'LxmertTokenizer', 'MarkupLMTokenizer', 'MBartTokenizer', 'MBart50Tokenizer', 'MPNetTokenizer', 'MobileBertTokenizer', 'MvpTokenizer', 'NllbTokenizer', 'OpenAIGPTTokenizer', 'PegasusTokenizer', 'Qwen2Tokenizer', 'RealmTokenizer', 'ReformerTokenizer', 'RemBertTokenizer', 'RetriBertTokenizer', 'RobertaTokenizer', 'RoFormerTokenizer', 'SeamlessM4TTokenizer', 'SqueezeBertTokenizer', 'T5Tokenizer', 'UdopTokenizer', 'WhisperTokenizer', 'XLMRobertaTokenizer', 'XLNetTokenizer', 'SplinterTokenizer', 'XGLMTokenizer', 'LlamaTokenizer', 'CodeLlamaTokenizer', 'GemmaTokenizer', 'Phi3Tokenizer']
+2025-03-26 09:32:48.206 | ERROR    | __main__:<module>:340 - Training failed: Converting from Tiktoken failed, if a converter for SentencePiece is available, provide a model path with a SentencePiece tokenizer.model file.Currently available slow->fast convertors: ['AlbertTokenizer', 'BartTokenizer', 'BarthezTokenizer', 'BertTokenizer', 'BigBirdTokenizer', 'BlenderbotTokenizer', 'CamembertTokenizer', 'CLIPTokenizer', 'CodeGenTokenizer', 'ConvBertTokenizer', 'DebertaTokenizer', 'DebertaV2Tokenizer', 'DistilBertTokenizer', 'DPRReaderTokenizer', 'DPRQuestionEncoderTokenizer', 'DPRContextEncoderTokenizer', 'ElectraTokenizer', 'FNetTokenizer', 'FunnelTokenizer', 'GPT2Tokenizer', 'HerbertTokenizer', 'LayoutLMTokenizer', 'LayoutLMv2Tokenizer', 'LayoutLMv3Tokenizer', 'LayoutXLMTokenizer', 'LongformerTokenizer', 'LEDTokenizer', 'LxmertTokenizer', 'MarkupLMTokenizer', 'MBartTokenizer', 'MBart50Tokenizer', 'MPNetTokenizer', 'MobileBertTokenizer', 'MvpTokenizer', 'NllbTokenizer', 'OpenAIGPTTokenizer', 'PegasusTokenizer', 'Qwen2Tokenizer', 'RealmTokenizer', 'ReformerTokenizer', 'RemBertTokenizer', 'RetriBertTokenizer', 'RobertaTokenizer', 'RoFormerTokenizer', 'SeamlessM4TTokenizer', 'SqueezeBertTokenizer', 'T5Tokenizer', 'UdopTokenizer', 'WhisperTokenizer', 'XLMRobertaTokenizer', 'XLNetTokenizer', 'SplinterTokenizer', 'XGLMTokenizer', 'LlamaTokenizer', 'CodeLlamaTokenizer', 'GemmaTokenizer', 'Phi3Tokenizer']
+2025-03-26 09:34:37.882 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from apt.jsonl
+2025-03-26 09:34:37.883 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from data_breach.jsonl
+2025-03-26 09:34:37.883 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from ddos.jsonl
+2025-03-26 09:34:37.883 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from insider_threat.jsonl
+2025-03-26 09:34:37.884 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from malware.jsonl
+2025-03-26 09:34:37.884 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from phishing.jsonl
+2025-03-26 09:34:37.884 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from ransomware.jsonl
+2025-03-26 09:34:37.884 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from social_engineering.jsonl
+2025-03-26 09:34:37.885 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from web_attack.jsonl
+2025-03-26 09:34:37.885 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from zero_day.jsonl
+2025-03-26 09:34:37.885 | INFO     | models.bert.data_manager:load_training_data:210 - Saved category mapping with 10 categories
+2025-03-26 09:34:37.887 | INFO     | models.bert.data_manager:prepare_training_data:237 - Split data into 80 training and 20 test samples
+2025-03-26 09:34:37.887 | INFO     | models.bert.threat_classifier:__init__:27 - Using device: cpu
+2025-03-26 09:34:37.887 | INFO     | models.bert.threat_classifier:__init__:44 - Initializing new model with microsoft/deberta-v3-base
+2025-03-26 09:34:38.221 | ERROR    | __main__:train_model:312 - Error in training: Converting from Tiktoken failed, if a converter for SentencePiece is available, provide a model path with a SentencePiece tokenizer.model file.Currently available slow->fast convertors: ['AlbertTokenizer', 'BartTokenizer', 'BarthezTokenizer', 'BertTokenizer', 'BigBirdTokenizer', 'BlenderbotTokenizer', 'CamembertTokenizer', 'CLIPTokenizer', 'CodeGenTokenizer', 'ConvBertTokenizer', 'DebertaTokenizer', 'DebertaV2Tokenizer', 'DistilBertTokenizer', 'DPRReaderTokenizer', 'DPRQuestionEncoderTokenizer', 'DPRContextEncoderTokenizer', 'ElectraTokenizer', 'FNetTokenizer', 'FunnelTokenizer', 'GPT2Tokenizer', 'HerbertTokenizer', 'LayoutLMTokenizer', 'LayoutLMv2Tokenizer', 'LayoutLMv3Tokenizer', 'LayoutXLMTokenizer', 'LongformerTokenizer', 'LEDTokenizer', 'LxmertTokenizer', 'MarkupLMTokenizer', 'MBartTokenizer', 'MBart50Tokenizer', 'MPNetTokenizer', 'MobileBertTokenizer', 'MvpTokenizer', 'NllbTokenizer', 'OpenAIGPTTokenizer', 'PegasusTokenizer', 'Qwen2Tokenizer', 'RealmTokenizer', 'ReformerTokenizer', 'RemBertTokenizer', 'RetriBertTokenizer', 'RobertaTokenizer', 'RoFormerTokenizer', 'SeamlessM4TTokenizer', 'SqueezeBertTokenizer', 'T5Tokenizer', 'UdopTokenizer', 'WhisperTokenizer', 'XLMRobertaTokenizer', 'XLNetTokenizer', 'SplinterTokenizer', 'XGLMTokenizer', 'LlamaTokenizer', 'CodeLlamaTokenizer', 'GemmaTokenizer', 'Phi3Tokenizer']
+2025-03-26 09:34:38.222 | ERROR    | __main__:<module>:340 - Training failed: Converting from Tiktoken failed, if a converter for SentencePiece is available, provide a model path with a SentencePiece tokenizer.model file.Currently available slow->fast convertors: ['AlbertTokenizer', 'BartTokenizer', 'BarthezTokenizer', 'BertTokenizer', 'BigBirdTokenizer', 'BlenderbotTokenizer', 'CamembertTokenizer', 'CLIPTokenizer', 'CodeGenTokenizer', 'ConvBertTokenizer', 'DebertaTokenizer', 'DebertaV2Tokenizer', 'DistilBertTokenizer', 'DPRReaderTokenizer', 'DPRQuestionEncoderTokenizer', 'DPRContextEncoderTokenizer', 'ElectraTokenizer', 'FNetTokenizer', 'FunnelTokenizer', 'GPT2Tokenizer', 'HerbertTokenizer', 'LayoutLMTokenizer', 'LayoutLMv2Tokenizer', 'LayoutLMv3Tokenizer', 'LayoutXLMTokenizer', 'LongformerTokenizer', 'LEDTokenizer', 'LxmertTokenizer', 'MarkupLMTokenizer', 'MBartTokenizer', 'MBart50Tokenizer', 'MPNetTokenizer', 'MobileBertTokenizer', 'MvpTokenizer', 'NllbTokenizer', 'OpenAIGPTTokenizer', 'PegasusTokenizer', 'Qwen2Tokenizer', 'RealmTokenizer', 'ReformerTokenizer', 'RemBertTokenizer', 'RetriBertTokenizer', 'RobertaTokenizer', 'RoFormerTokenizer', 'SeamlessM4TTokenizer', 'SqueezeBertTokenizer', 'T5Tokenizer', 'UdopTokenizer', 'WhisperTokenizer', 'XLMRobertaTokenizer', 'XLNetTokenizer', 'SplinterTokenizer', 'XGLMTokenizer', 'LlamaTokenizer', 'CodeLlamaTokenizer', 'GemmaTokenizer', 'Phi3Tokenizer']
+2025-03-26 09:34:58.989 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from apt.jsonl
+2025-03-26 09:34:58.990 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from data_breach.jsonl
+2025-03-26 09:34:58.991 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from ddos.jsonl
+2025-03-26 09:34:58.991 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from insider_threat.jsonl
+2025-03-26 09:34:58.992 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from malware.jsonl
+2025-03-26 09:34:58.992 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from phishing.jsonl
+2025-03-26 09:34:58.992 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from ransomware.jsonl
+2025-03-26 09:34:58.992 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from social_engineering.jsonl
+2025-03-26 09:34:58.993 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from web_attack.jsonl
+2025-03-26 09:34:58.993 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from zero_day.jsonl
+2025-03-26 09:34:58.993 | INFO     | models.bert.data_manager:load_training_data:210 - Saved category mapping with 10 categories
+2025-03-26 09:34:58.995 | INFO     | models.bert.data_manager:prepare_training_data:237 - Split data into 80 training and 20 test samples
+2025-03-26 09:34:58.995 | INFO     | models.bert.threat_classifier:__init__:27 - Using device: cpu
+2025-03-26 09:34:58.995 | INFO     | models.bert.threat_classifier:__init__:44 - Initializing new model with roberta-base
+2025-03-26 09:35:00.437 | INFO     | models.bert.threat_classifier:_initial_fine_tune:102 - Starting fine-tuning with 100 examples
+2025-03-26 09:35:00.437 | INFO     | models.bert.threat_classifier:_initial_fine_tune:103 - Class weights: {0: 1.0, 1: 1.0, 2: 1.0, 3: 1.0, 4: 1.0, 5: 1.0, 6: 1.0, 7: 1.0, 8: 1.0, 9: 1.0}
+2025-03-26 09:35:02.240 | ERROR    | __main__:train_model:312 - Error in training: Expected input batch_size (144) to match target batch_size (8).
+2025-03-26 09:35:02.241 | ERROR    | __main__:<module>:340 - Training failed: Expected input batch_size (144) to match target batch_size (8).
+2025-03-26 09:37:45.409 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from apt.jsonl
+2025-03-26 09:37:45.411 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from data_breach.jsonl
+2025-03-26 09:37:45.411 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from ddos.jsonl
+2025-03-26 09:37:45.412 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from insider_threat.jsonl
+2025-03-26 09:37:45.412 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from malware.jsonl
+2025-03-26 09:37:45.412 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from phishing.jsonl
+2025-03-26 09:37:45.413 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from ransomware.jsonl
+2025-03-26 09:37:45.413 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from social_engineering.jsonl
+2025-03-26 09:37:45.413 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from web_attack.jsonl
+2025-03-26 09:37:45.414 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from zero_day.jsonl
+2025-03-26 09:37:45.414 | INFO     | models.bert.data_manager:load_training_data:210 - Saved category mapping with 10 categories
+2025-03-26 09:37:45.417 | INFO     | models.bert.data_manager:prepare_training_data:237 - Split data into 80 training and 20 test samples
+2025-03-26 09:37:45.417 | INFO     | models.bert.threat_classifier:__init__:27 - Using device: cpu
+2025-03-26 09:37:45.417 | INFO     | models.bert.threat_classifier:__init__:44 - Initializing new model with roberta-base
+2025-03-26 09:37:46.848 | INFO     | models.bert.threat_classifier:_initial_fine_tune:102 - Starting fine-tuning with 100 examples
+2025-03-26 09:37:46.848 | INFO     | models.bert.threat_classifier:_initial_fine_tune:103 - Class weights: {0: 1.0, 1: 1.0, 2: 1.0, 3: 1.0, 4: 1.0, 5: 1.0, 6: 1.0, 7: 1.0, 8: 1.0, 9: 1.0}
+2025-03-26 09:37:48.505 | ERROR    | __main__:train_model:312 - Error in training: Expected input batch_size (120) to match target batch_size (8).
+2025-03-26 09:37:48.505 | ERROR    | __main__:<module>:340 - Training failed: Expected input batch_size (120) to match target batch_size (8).
+2025-03-26 09:38:35.962 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from apt.jsonl
+2025-03-26 09:38:35.963 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from data_breach.jsonl
+2025-03-26 09:38:35.963 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from ddos.jsonl
+2025-03-26 09:38:35.963 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from insider_threat.jsonl
+2025-03-26 09:38:35.964 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from malware.jsonl
+2025-03-26 09:38:35.964 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from phishing.jsonl
+2025-03-26 09:38:35.964 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from ransomware.jsonl
+2025-03-26 09:38:35.965 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from social_engineering.jsonl
+2025-03-26 09:38:35.965 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from web_attack.jsonl
+2025-03-26 09:38:35.965 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from zero_day.jsonl
+2025-03-26 09:38:35.966 | INFO     | models.bert.data_manager:load_training_data:210 - Saved category mapping with 10 categories
+2025-03-26 09:38:35.967 | INFO     | models.bert.data_manager:prepare_training_data:237 - Split data into 80 training and 20 test samples
+2025-03-26 09:38:35.968 | INFO     | models.bert.threat_classifier:__init__:27 - Using device: cpu
+2025-03-26 09:38:35.968 | INFO     | models.bert.threat_classifier:__init__:44 - Initializing new model with roberta-base
+2025-03-26 09:38:37.362 | INFO     | models.bert.threat_classifier:_initial_fine_tune:102 - Starting fine-tuning with 100 examples
+2025-03-26 09:38:37.362 | INFO     | models.bert.threat_classifier:_initial_fine_tune:103 - Class weights: {0: 1.0, 1: 1.0, 2: 1.0, 3: 1.0, 4: 1.0, 5: 1.0, 6: 1.0, 7: 1.0, 8: 1.0, 9: 1.0}
+2025-03-26 09:38:38.549 | ERROR    | __main__:train_model:312 - Error in training: Expected input batch_size (144) to match target batch_size (8).
+2025-03-26 09:38:38.550 | ERROR    | __main__:<module>:340 - Training failed: Expected input batch_size (144) to match target batch_size (8).
+2025-03-26 09:39:27.929 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from apt.jsonl
+2025-03-26 09:39:27.930 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from data_breach.jsonl
+2025-03-26 09:39:27.930 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from ddos.jsonl
+2025-03-26 09:39:27.930 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from insider_threat.jsonl
+2025-03-26 09:39:27.931 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from malware.jsonl
+2025-03-26 09:39:27.931 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from phishing.jsonl
+2025-03-26 09:39:27.931 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from ransomware.jsonl
+2025-03-26 09:39:27.931 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from social_engineering.jsonl
+2025-03-26 09:39:27.932 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from web_attack.jsonl
+2025-03-26 09:39:27.932 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from zero_day.jsonl
+2025-03-26 09:39:27.932 | INFO     | models.bert.data_manager:load_training_data:210 - Saved category mapping with 10 categories
+2025-03-26 09:39:27.934 | INFO     | models.bert.data_manager:prepare_training_data:237 - Split data into 80 training and 20 test samples
+2025-03-26 09:39:27.934 | INFO     | models.bert.threat_classifier:__init__:27 - Using device: cpu
+2025-03-26 09:39:27.934 | INFO     | models.bert.threat_classifier:__init__:44 - Initializing new model with roberta-base
+2025-03-26 09:39:34.554 | INFO     | models.bert.threat_classifier:_initial_fine_tune:102 - Starting fine-tuning with 100 examples
+2025-03-26 09:39:34.555 | INFO     | models.bert.threat_classifier:_initial_fine_tune:103 - Class weights: {0: 1.0, 1: 1.0, 2: 1.0, 3: 1.0, 4: 1.0, 5: 1.0, 6: 1.0, 7: 1.0, 8: 1.0, 9: 1.0}
+2025-03-26 09:39:35.926 | ERROR    | __main__:train_model:87 - Training failed: Expected input batch_size (144) to match target batch_size (8).
+2025-03-26 09:39:35.927 | ERROR    | __main__:<module>:107 - Training failed: Expected input batch_size (144) to match target batch_size (8).
+2025-03-26 09:40:57.355 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from apt.jsonl
+2025-03-26 09:40:57.356 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from data_breach.jsonl
+2025-03-26 09:40:57.356 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from ddos.jsonl
+2025-03-26 09:40:57.357 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from insider_threat.jsonl
+2025-03-26 09:40:57.357 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from malware.jsonl
+2025-03-26 09:40:57.357 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from phishing.jsonl
+2025-03-26 09:40:57.358 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from ransomware.jsonl
+2025-03-26 09:40:57.358 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from social_engineering.jsonl
+2025-03-26 09:40:57.358 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from web_attack.jsonl
+2025-03-26 09:40:57.359 | INFO     | models.bert.data_manager:load_training_data:204 - Loaded 10 valid entries from zero_day.jsonl
+2025-03-26 09:40:57.359 | INFO     | models.bert.data_manager:load_training_data:210 - Saved category mapping with 10 categories
+2025-03-26 09:40:57.364 | INFO     | models.bert.data_manager:prepare_training_data:237 - Split data into 80 training and 20 test samples
+2025-03-26 09:40:57.364 | INFO     | models.bert.threat_classifier:__init__:27 - Using device: cpu
+2025-03-26 09:40:57.364 | INFO     | models.bert.threat_classifier:__init__:44 - Initializing new model with roberta-base
+2025-03-26 09:40:58.441 | INFO     | models.bert.threat_classifier:_initial_fine_tune:102 - Starting fine-tuning with 100 examples
+2025-03-26 09:40:58.441 | INFO     | models.bert.threat_classifier:_initial_fine_tune:103 - Class weights: {0: 1.0, 1: 1.0, 2: 1.0, 3: 1.0, 4: 1.0, 5: 1.0, 6: 1.0, 7: 1.0, 8: 1.0, 9: 1.0}
+2025-03-26 09:41:00.208 | ERROR    | __main__:train_model:87 - Training failed: Expected input batch_size (144) to match target batch_size (8).
+2025-03-26 09:41:00.208 | ERROR    | __main__:<module>:107 - Training failed: Expected input batch_size (144) to match target batch_size (8).
