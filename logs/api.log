@@ -1,0 +1,412 @@
+2025-03-15 11:25:31.819 | ERROR    | api.main:general_exception_handler:71 - Unexpected error occurred: Mapper 'Mapper[ThreatIntelligence(threat_intelligence)]' has no property 'iocs'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-03-15 11:25:31.844 | ERROR    | api.main:general_exception_handler:71 - Unexpected error occurred: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[IOC(iocs)]'. Original exception was: Mapper 'Mapper[ThreatIntelligence(threat_intelligence)]' has no property 'iocs'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-03-15 11:25:31.850 | ERROR    | api.main:general_exception_handler:71 - Unexpected error occurred: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[IOC(iocs)]'. Original exception was: Mapper 'Mapper[ThreatIntelligence(threat_intelligence)]' has no property 'iocs'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-03-15 11:25:35.716 | ERROR    | api.main:general_exception_handler:71 - Unexpected error occurred: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[IOC(iocs)]'. Original exception was: Mapper 'Mapper[ThreatIntelligence(threat_intelligence)]' has no property 'iocs'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-03-15 11:26:00.331 | ERROR    | api.routers.threat_intelligence:get_stats:149 - Error getting stats: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[IOC(iocs)]'. Original exception was: Mapper 'Mapper[ThreatIntelligence(threat_intelligence)]' has no property 'iocs'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-03-15 11:26:00.332 | ERROR    | api.main:http_exception_handler:62 - HTTP error occurred: Error getting statistics
+2025-03-15 11:26:00.336 | ERROR    | api.routers.threat_intelligence:get_stats:149 - Error getting stats: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[IOC(iocs)]'. Original exception was: Mapper 'Mapper[ThreatIntelligence(threat_intelligence)]' has no property 'iocs'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-03-15 11:26:00.337 | ERROR    | api.main:http_exception_handler:62 - HTTP error occurred: Error getting statistics
+2025-03-15 18:06:20.415 | ERROR    | api.routers.threat_intelligence:get_stats:277 - Error getting stats: (psycopg2.errors.UndefinedTable) relation "threat_intelligence" does not exist
+LINE 3: FROM threat_intelligence) AS anon_1
+             ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT threat_intelligence.id AS threat_intelligence_id, threat_intelligence.threat_type AS threat_intelligence_threat_type, threat_intelligence.source AS threat_intelligence_source, threat_intelligence.description AS threat_intelligence_description, threat_intelligence.indicators AS threat_intelligence_indicators, threat_intelligence.risk_score AS threat_intelligence_risk_score, threat_intelligence.confidence_score AS threat_intelligence_confidence_score, threat_intelligence.mitre_techniques AS threat_intelligence_mitre_techniques, threat_intelligence.geographic_location AS threat_intelligence_geographic_location, threat_intelligence.created_at AS threat_intelligence_created_at, threat_intelligence.updated_at AS threat_intelligence_updated_at, threat_intelligence.raw_data AS threat_intelligence_raw_data 
+FROM threat_intelligence) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-03-15 18:06:20.418 | ERROR    | api.main:http_exception_handler:62 - HTTP error occurred: Error getting statistics
+2025-03-15 18:06:20.423 | ERROR    | api.routers.threat_intelligence:get_stats:277 - Error getting stats: (psycopg2.errors.UndefinedTable) relation "threat_intelligence" does not exist
+LINE 3: FROM threat_intelligence) AS anon_1
+             ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT threat_intelligence.id AS threat_intelligence_id, threat_intelligence.threat_type AS threat_intelligence_threat_type, threat_intelligence.source AS threat_intelligence_source, threat_intelligence.description AS threat_intelligence_description, threat_intelligence.indicators AS threat_intelligence_indicators, threat_intelligence.risk_score AS threat_intelligence_risk_score, threat_intelligence.confidence_score AS threat_intelligence_confidence_score, threat_intelligence.mitre_techniques AS threat_intelligence_mitre_techniques, threat_intelligence.geographic_location AS threat_intelligence_geographic_location, threat_intelligence.created_at AS threat_intelligence_created_at, threat_intelligence.updated_at AS threat_intelligence_updated_at, threat_intelligence.raw_data AS threat_intelligence_raw_data 
+FROM threat_intelligence) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-03-15 18:06:20.423 | ERROR    | api.main:http_exception_handler:62 - HTTP error occurred: Error getting statistics
+2025-03-15 18:06:30.553 | ERROR    | api.main:general_exception_handler:71 - Unexpected error occurred: (psycopg2.errors.UndefinedTable) relation "threat_intelligence" does not exist
+LINE 2: FROM threat_intelligence 
+             ^
+
+[SQL: SELECT threat_intelligence.id AS threat_intelligence_id, threat_intelligence.threat_type AS threat_intelligence_threat_type, threat_intelligence.source AS threat_intelligence_source, threat_intelligence.description AS threat_intelligence_description, threat_intelligence.indicators AS threat_intelligence_indicators, threat_intelligence.risk_score AS threat_intelligence_risk_score, threat_intelligence.confidence_score AS threat_intelligence_confidence_score, threat_intelligence.mitre_techniques AS threat_intelligence_mitre_techniques, threat_intelligence.geographic_location AS threat_intelligence_geographic_location, threat_intelligence.created_at AS threat_intelligence_created_at, threat_intelligence.updated_at AS threat_intelligence_updated_at, threat_intelligence.raw_data AS threat_intelligence_raw_data 
+FROM threat_intelligence 
+ LIMIT %(param_1)s OFFSET %(param_2)s]
+[parameters: {'param_1': 10, 'param_2': 0}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-03-15 18:06:30.585 | ERROR    | api.main:general_exception_handler:71 - Unexpected error occurred: (psycopg2.errors.UndefinedTable) relation "threat_intelligence" does not exist
+LINE 2: FROM threat_intelligence 
+             ^
+
+[SQL: SELECT threat_intelligence.id AS threat_intelligence_id, threat_intelligence.threat_type AS threat_intelligence_threat_type, threat_intelligence.source AS threat_intelligence_source, threat_intelligence.description AS threat_intelligence_description, threat_intelligence.indicators AS threat_intelligence_indicators, threat_intelligence.risk_score AS threat_intelligence_risk_score, threat_intelligence.confidence_score AS threat_intelligence_confidence_score, threat_intelligence.mitre_techniques AS threat_intelligence_mitre_techniques, threat_intelligence.geographic_location AS threat_intelligence_geographic_location, threat_intelligence.created_at AS threat_intelligence_created_at, threat_intelligence.updated_at AS threat_intelligence_updated_at, threat_intelligence.raw_data AS threat_intelligence_raw_data 
+FROM threat_intelligence 
+ LIMIT %(param_1)s OFFSET %(param_2)s]
+[parameters: {'param_1': 10, 'param_2': 0}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-03-15 18:06:30.590 | ERROR    | api.main:general_exception_handler:71 - Unexpected error occurred: (psycopg2.errors.UndefinedTable) relation "threat_intelligence" does not exist
+LINE 2: FROM threat_intelligence 
+             ^
+
+[SQL: SELECT threat_intelligence.id AS threat_intelligence_id, threat_intelligence.threat_type AS threat_intelligence_threat_type, threat_intelligence.source AS threat_intelligence_source, threat_intelligence.description AS threat_intelligence_description, threat_intelligence.indicators AS threat_intelligence_indicators, threat_intelligence.risk_score AS threat_intelligence_risk_score, threat_intelligence.confidence_score AS threat_intelligence_confidence_score, threat_intelligence.mitre_techniques AS threat_intelligence_mitre_techniques, threat_intelligence.geographic_location AS threat_intelligence_geographic_location, threat_intelligence.created_at AS threat_intelligence_created_at, threat_intelligence.updated_at AS threat_intelligence_updated_at, threat_intelligence.raw_data AS threat_intelligence_raw_data 
+FROM threat_intelligence 
+ LIMIT %(param_1)s OFFSET %(param_2)s]
+[parameters: {'param_1': 10, 'param_2': 0}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-03-15 18:06:33.269 | ERROR    | api.main:general_exception_handler:71 - Unexpected error occurred: (psycopg2.errors.UndefinedTable) relation "threat_intelligence" does not exist
+LINE 2: FROM threat_intelligence 
+             ^
+
+[SQL: SELECT threat_intelligence.id AS threat_intelligence_id, threat_intelligence.threat_type AS threat_intelligence_threat_type, threat_intelligence.source AS threat_intelligence_source, threat_intelligence.description AS threat_intelligence_description, threat_intelligence.indicators AS threat_intelligence_indicators, threat_intelligence.risk_score AS threat_intelligence_risk_score, threat_intelligence.confidence_score AS threat_intelligence_confidence_score, threat_intelligence.mitre_techniques AS threat_intelligence_mitre_techniques, threat_intelligence.geographic_location AS threat_intelligence_geographic_location, threat_intelligence.created_at AS threat_intelligence_created_at, threat_intelligence.updated_at AS threat_intelligence_updated_at, threat_intelligence.raw_data AS threat_intelligence_raw_data 
+FROM threat_intelligence 
+WHERE threat_intelligence.threat_type = %(threat_type_1)s 
+ LIMIT %(param_1)s OFFSET %(param_2)s]
+[parameters: {'threat_type_1': 'malware', 'param_1': 10, 'param_2': 0}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-03-15 18:13:12.661 | ERROR    | api.routers.threat_intelligence:get_stats:286 - Error getting stats: (psycopg2.errors.UndefinedTable) relation "threat_intelligence" does not exist
+LINE 3: FROM threat_intelligence) AS anon_1
+             ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT threat_intelligence.id AS threat_intelligence_id, threat_intelligence.threat_type AS threat_intelligence_threat_type, threat_intelligence.source AS threat_intelligence_source, threat_intelligence.description AS threat_intelligence_description, threat_intelligence.indicators AS threat_intelligence_indicators, threat_intelligence.risk_score AS threat_intelligence_risk_score, threat_intelligence.confidence_score AS threat_intelligence_confidence_score, threat_intelligence.mitre_techniques AS threat_intelligence_mitre_techniques, threat_intelligence.geographic_location AS threat_intelligence_geographic_location, threat_intelligence.created_at AS threat_intelligence_created_at, threat_intelligence.updated_at AS threat_intelligence_updated_at, threat_intelligence.raw_data AS threat_intelligence_raw_data 
+FROM threat_intelligence) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-03-15 18:13:12.665 | ERROR    | api.main:http_exception_handler:62 - HTTP error occurred: Error getting statistics
+2025-03-15 18:13:12.674 | ERROR    | api.routers.threat_intelligence:get_stats:286 - Error getting stats: (psycopg2.errors.UndefinedTable) relation "threat_intelligence" does not exist
+LINE 3: FROM threat_intelligence) AS anon_1
+             ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT threat_intelligence.id AS threat_intelligence_id, threat_intelligence.threat_type AS threat_intelligence_threat_type, threat_intelligence.source AS threat_intelligence_source, threat_intelligence.description AS threat_intelligence_description, threat_intelligence.indicators AS threat_intelligence_indicators, threat_intelligence.risk_score AS threat_intelligence_risk_score, threat_intelligence.confidence_score AS threat_intelligence_confidence_score, threat_intelligence.mitre_techniques AS threat_intelligence_mitre_techniques, threat_intelligence.geographic_location AS threat_intelligence_geographic_location, threat_intelligence.created_at AS threat_intelligence_created_at, threat_intelligence.updated_at AS threat_intelligence_updated_at, threat_intelligence.raw_data AS threat_intelligence_raw_data 
+FROM threat_intelligence) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-03-15 18:13:12.677 | ERROR    | api.main:http_exception_handler:62 - HTTP error occurred: Error getting statistics
+2025-03-15 18:13:15.266 | ERROR    | api.main:general_exception_handler:71 - Unexpected error occurred: (psycopg2.errors.UndefinedTable) relation "threat_intelligence" does not exist
+LINE 2: FROM threat_intelligence 
+             ^
+
+[SQL: SELECT threat_intelligence.id AS threat_intelligence_id, threat_intelligence.threat_type AS threat_intelligence_threat_type, threat_intelligence.source AS threat_intelligence_source, threat_intelligence.description AS threat_intelligence_description, threat_intelligence.indicators AS threat_intelligence_indicators, threat_intelligence.risk_score AS threat_intelligence_risk_score, threat_intelligence.confidence_score AS threat_intelligence_confidence_score, threat_intelligence.mitre_techniques AS threat_intelligence_mitre_techniques, threat_intelligence.geographic_location AS threat_intelligence_geographic_location, threat_intelligence.created_at AS threat_intelligence_created_at, threat_intelligence.updated_at AS threat_intelligence_updated_at, threat_intelligence.raw_data AS threat_intelligence_raw_data 
+FROM threat_intelligence 
+ LIMIT %(param_1)s OFFSET %(param_2)s]
+[parameters: {'param_1': 10, 'param_2': 0}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-03-15 18:13:15.291 | ERROR    | api.main:general_exception_handler:71 - Unexpected error occurred: (psycopg2.errors.UndefinedTable) relation "threat_intelligence" does not exist
+LINE 2: FROM threat_intelligence 
+             ^
+
+[SQL: SELECT threat_intelligence.id AS threat_intelligence_id, threat_intelligence.threat_type AS threat_intelligence_threat_type, threat_intelligence.source AS threat_intelligence_source, threat_intelligence.description AS threat_intelligence_description, threat_intelligence.indicators AS threat_intelligence_indicators, threat_intelligence.risk_score AS threat_intelligence_risk_score, threat_intelligence.confidence_score AS threat_intelligence_confidence_score, threat_intelligence.mitre_techniques AS threat_intelligence_mitre_techniques, threat_intelligence.geographic_location AS threat_intelligence_geographic_location, threat_intelligence.created_at AS threat_intelligence_created_at, threat_intelligence.updated_at AS threat_intelligence_updated_at, threat_intelligence.raw_data AS threat_intelligence_raw_data 
+FROM threat_intelligence 
+ LIMIT %(param_1)s OFFSET %(param_2)s]
+[parameters: {'param_1': 10, 'param_2': 0}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-03-15 18:13:15.296 | ERROR    | api.main:general_exception_handler:71 - Unexpected error occurred: (psycopg2.errors.UndefinedTable) relation "threat_intelligence" does not exist
+LINE 2: FROM threat_intelligence 
+             ^
+
+[SQL: SELECT threat_intelligence.id AS threat_intelligence_id, threat_intelligence.threat_type AS threat_intelligence_threat_type, threat_intelligence.source AS threat_intelligence_source, threat_intelligence.description AS threat_intelligence_description, threat_intelligence.indicators AS threat_intelligence_indicators, threat_intelligence.risk_score AS threat_intelligence_risk_score, threat_intelligence.confidence_score AS threat_intelligence_confidence_score, threat_intelligence.mitre_techniques AS threat_intelligence_mitre_techniques, threat_intelligence.geographic_location AS threat_intelligence_geographic_location, threat_intelligence.created_at AS threat_intelligence_created_at, threat_intelligence.updated_at AS threat_intelligence_updated_at, threat_intelligence.raw_data AS threat_intelligence_raw_data 
+FROM threat_intelligence 
+ LIMIT %(param_1)s OFFSET %(param_2)s]
+[parameters: {'param_1': 10, 'param_2': 0}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-03-15 18:16:24.015 | ERROR    | collectors.feeds.virustotal_collector:check_ip:68 - Error checking IP 192.168.45.200: 403
+2025-03-15 18:16:24.527 | ERROR    | collectors.feeds.virustotal_collector:check_ip:68 - Error checking IP 192.168.45.200: 403
+2025-03-15 18:16:24.562 | ERROR    | api.main:general_exception_handler:71 - Unexpected error occurred: object NoneType can't be used in 'await' expression
+2025-03-15 18:37:45.934 | ERROR    | api.routers.threat_intelligence:get_stats:297 - Error getting stats: 'Session' object has no attribute 'func'
+2025-03-15 18:37:45.936 | ERROR    | api.main:http_exception_handler:62 - HTTP error occurred: Error getting statistics
+2025-03-15 18:37:45.953 | ERROR    | api.routers.threat_intelligence:get_stats:297 - Error getting stats: 'Session' object has no attribute 'func'
+2025-03-15 18:37:45.957 | ERROR    | api.main:http_exception_handler:62 - HTTP error occurred: Error getting statistics
+2025-03-16 23:35:41.145 | ERROR    | api.routers.threat_intelligence:get_stats:297 - Error getting stats: 'Session' object has no attribute 'func'
+2025-03-16 23:35:41.153 | ERROR    | api.main:http_exception_handler:62 - HTTP error occurred: Error getting statistics
+2025-03-16 23:35:41.184 | ERROR    | api.routers.threat_intelligence:get_stats:297 - Error getting stats: 'Session' object has no attribute 'func'
+2025-03-16 23:35:41.188 | ERROR    | api.main:http_exception_handler:62 - HTTP error occurred: Error getting statistics
+2025-03-16 23:35:41.229 | ERROR    | api.routers.threat_intelligence:get_stats:297 - Error getting stats: 'Session' object has no attribute 'func'
+2025-03-16 23:35:41.242 | ERROR    | api.main:http_exception_handler:62 - HTTP error occurred: Error getting statistics
+2025-03-16 23:35:55.358 | ERROR    | api.routers.threat_intelligence:get_stats:297 - Error getting stats: 'Session' object has no attribute 'func'
+2025-03-16 23:35:55.360 | ERROR    | api.main:http_exception_handler:62 - HTTP error occurred: Error getting statistics
+2025-03-16 23:35:55.375 | ERROR    | api.routers.threat_intelligence:get_stats:297 - Error getting stats: 'Session' object has no attribute 'func'
+2025-03-16 23:35:55.377 | ERROR    | api.main:http_exception_handler:62 - HTTP error occurred: Error getting statistics
+2025-03-16 23:35:55.382 | ERROR    | api.routers.threat_intelligence:get_stats:297 - Error getting stats: 'Session' object has no attribute 'func'
+2025-03-16 23:35:55.383 | ERROR    | api.main:http_exception_handler:62 - HTTP error occurred: Error getting statistics
+2025-03-16 23:44:09.006 | INFO     | api.routers.threat_intelligence:analyze_threat:171 - Predicted category: social_engineering with confidence: 0.13953199982643127
+2025-03-16 23:44:09.009 | INFO     | api.routers.threat_intelligence:analyze_threat:175 - Extracted 3 IOCs
+2025-03-16 23:44:10.198 | ERROR    | collectors.feeds.virustotal_collector:check_ip:68 - Error checking IP 192.168.1.100: 403
+2025-03-16 23:44:10.687 | ERROR    | collectors.feeds.virustotal_collector:check_domain:50 - Error checking domain malicious-bank.com: 403
+2025-03-16 23:44:10.719 | INFO     | api.routers.threat_intelligence:analyze_threat:221 - Successfully stored threat analysis for: A newly identified phishing campaign is targeting financial institutions. The attackers are using th...
+2025-03-16 23:44:38.528 | INFO     | api.routers.threat_intelligence:analyze_threat:171 - Predicted category: social_engineering with confidence: 0.14149527251720428
+2025-03-16 23:44:38.528 | INFO     | api.routers.threat_intelligence:analyze_threat:175 - Extracted 1 IOCs
+2025-03-16 23:44:38.941 | ERROR    | collectors.feeds.virustotal_collector:check_domain:50 - Error checking domain maliciousbank-login.com: 403
+2025-03-16 23:44:38.953 | INFO     | api.routers.threat_intelligence:analyze_threat:221 - Successfully stored threat analysis for: Security researchers detected a new phishing campaign targeting financial institutions. Attackers se...
+2025-03-16 23:44:58.174 | INFO     | api.routers.threat_intelligence:analyze_threat:171 - Predicted category: social_engineering with confidence: 0.1409558653831482
+2025-03-16 23:44:58.176 | INFO     | api.routers.threat_intelligence:analyze_threat:175 - Extracted 2 IOCs
+2025-03-16 23:44:59.339 | ERROR    | collectors.feeds.virustotal_collector:check_ip:68 - Error checking IP 192.168.45.23: 403
+2025-03-16 23:45:00.449 | ERROR    | collectors.feeds.virustotal_collector:check_ip:68 - Error checking IP 202.54.12.98: 403
+2025-03-16 23:45:00.454 | INFO     | api.routers.threat_intelligence:analyze_threat:221 - Successfully stored threat analysis for: A new strain of ransomware, dubbed DarkLock, has been identified in the wild. It encrypts user files...
+2025-03-16 23:45:36.717 | INFO     | api.routers.threat_intelligence:analyze_threat:171 - Predicted category: social_engineering with confidence: 0.1375475972890854
+2025-03-16 23:45:36.717 | INFO     | api.routers.threat_intelligence:analyze_threat:175 - Extracted 4 IOCs
+2025-03-16 23:45:37.193 | ERROR    | collectors.feeds.virustotal_collector:check_ip:68 - Error checking IP 185.23.45.11: 403
+2025-03-16 23:45:37.635 | ERROR    | collectors.feeds.virustotal_collector:check_ip:68 - Error checking IP 98.76.54.32: 403
+2025-03-16 23:45:38.878 | ERROR    | collectors.feeds.virustotal_collector:check_ip:68 - Error checking IP 102.45.67.89: 403
+2025-03-16 23:45:39.259 | ERROR    | collectors.feeds.virustotal_collector:check_domain:50 - Error checking domain example.com: 403
+2025-03-16 23:45:39.267 | INFO     | api.routers.threat_intelligence:analyze_threat:221 - Successfully stored threat analysis for: A surge in malicious traffic was observed targeting example.com, originating from botnets leveraging...
+2025-03-16 23:45:49.537 | ERROR    | api.main:general_exception_handler:71 - Unexpected error occurred: 4 validation errors:
+  {'type': 'list_type', 'loc': ('response', 0, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '192.168.1.100', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'malicious-bank.com', 'confidence_score': 0.85, 'is_active': True}, {'type': 'MD5', 'value': 'd41d8cd98f00b204e9800998ecf8427e', 'confidence_score': 0.95, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 1, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'Domain', 'value': 'maliciousbank-login.com', 'confidence_score': 0.85, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 2, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '192.168.45.23', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '202.54.12.98', 'confidence_score': 0.9, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 3, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '185.23.45.11', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '98.76.54.32', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '102.45.67.89', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'example.com', 'confidence_score': 0.85, 'is_active': True}]}}
+
+2025-03-16 23:45:49.553 | ERROR    | api.main:general_exception_handler:71 - Unexpected error occurred: 4 validation errors:
+  {'type': 'list_type', 'loc': ('response', 0, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '192.168.1.100', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'malicious-bank.com', 'confidence_score': 0.85, 'is_active': True}, {'type': 'MD5', 'value': 'd41d8cd98f00b204e9800998ecf8427e', 'confidence_score': 0.95, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 1, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'Domain', 'value': 'maliciousbank-login.com', 'confidence_score': 0.85, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 2, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '192.168.45.23', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '202.54.12.98', 'confidence_score': 0.9, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 3, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '185.23.45.11', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '98.76.54.32', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '102.45.67.89', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'example.com', 'confidence_score': 0.85, 'is_active': True}]}}
+
+2025-03-16 23:45:49.558 | ERROR    | api.main:general_exception_handler:71 - Unexpected error occurred: 4 validation errors:
+  {'type': 'list_type', 'loc': ('response', 0, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '192.168.1.100', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'malicious-bank.com', 'confidence_score': 0.85, 'is_active': True}, {'type': 'MD5', 'value': 'd41d8cd98f00b204e9800998ecf8427e', 'confidence_score': 0.95, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 1, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'Domain', 'value': 'maliciousbank-login.com', 'confidence_score': 0.85, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 2, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '192.168.45.23', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '202.54.12.98', 'confidence_score': 0.9, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 3, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '185.23.45.11', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '98.76.54.32', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '102.45.67.89', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'example.com', 'confidence_score': 0.85, 'is_active': True}]}}
+
+2025-03-16 23:46:13.525 | ERROR    | api.main:general_exception_handler:71 - Unexpected error occurred: 4 validation errors:
+  {'type': 'list_type', 'loc': ('response', 0, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '192.168.1.100', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'malicious-bank.com', 'confidence_score': 0.85, 'is_active': True}, {'type': 'MD5', 'value': 'd41d8cd98f00b204e9800998ecf8427e', 'confidence_score': 0.95, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 1, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'Domain', 'value': 'maliciousbank-login.com', 'confidence_score': 0.85, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 2, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '192.168.45.23', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '202.54.12.98', 'confidence_score': 0.9, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 3, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '185.23.45.11', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '98.76.54.32', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '102.45.67.89', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'example.com', 'confidence_score': 0.85, 'is_active': True}]}}
+
+2025-03-16 23:47:10.072 | ERROR    | api.main:general_exception_handler:71 - Unexpected error occurred: 4 validation errors:
+  {'type': 'list_type', 'loc': ('response', 0, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '192.168.1.100', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'malicious-bank.com', 'confidence_score': 0.85, 'is_active': True}, {'type': 'MD5', 'value': 'd41d8cd98f00b204e9800998ecf8427e', 'confidence_score': 0.95, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 1, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'Domain', 'value': 'maliciousbank-login.com', 'confidence_score': 0.85, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 2, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '192.168.45.23', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '202.54.12.98', 'confidence_score': 0.9, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 3, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '185.23.45.11', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '98.76.54.32', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '102.45.67.89', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'example.com', 'confidence_score': 0.85, 'is_active': True}]}}
+
+2025-03-16 23:47:10.081 | ERROR    | api.main:general_exception_handler:71 - Unexpected error occurred: 4 validation errors:
+  {'type': 'list_type', 'loc': ('response', 0, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '192.168.1.100', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'malicious-bank.com', 'confidence_score': 0.85, 'is_active': True}, {'type': 'MD5', 'value': 'd41d8cd98f00b204e9800998ecf8427e', 'confidence_score': 0.95, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 1, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'Domain', 'value': 'maliciousbank-login.com', 'confidence_score': 0.85, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 2, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '192.168.45.23', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '202.54.12.98', 'confidence_score': 0.9, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 3, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '185.23.45.11', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '98.76.54.32', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '102.45.67.89', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'example.com', 'confidence_score': 0.85, 'is_active': True}]}}
+
+2025-03-16 23:47:10.090 | ERROR    | api.main:general_exception_handler:71 - Unexpected error occurred: 4 validation errors:
+  {'type': 'list_type', 'loc': ('response', 0, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '192.168.1.100', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'malicious-bank.com', 'confidence_score': 0.85, 'is_active': True}, {'type': 'MD5', 'value': 'd41d8cd98f00b204e9800998ecf8427e', 'confidence_score': 0.95, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 1, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'Domain', 'value': 'maliciousbank-login.com', 'confidence_score': 0.85, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 2, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '192.168.45.23', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '202.54.12.98', 'confidence_score': 0.9, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 3, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '185.23.45.11', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '98.76.54.32', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '102.45.67.89', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'example.com', 'confidence_score': 0.85, 'is_active': True}]}}
+
+2025-03-16 23:47:14.668 | INFO     | api.routers.threat_intelligence:analyze_threat:171 - Predicted category: social_engineering with confidence: 0.14407238364219666
+2025-03-16 23:47:14.669 | INFO     | api.routers.threat_intelligence:analyze_threat:175 - Extracted 4 IOCs
+2025-03-16 23:47:15.068 | ERROR    | collectors.feeds.virustotal_collector:check_ip:68 - Error checking IP 185.23.45.11: 403
+2025-03-16 23:47:15.453 | ERROR    | collectors.feeds.virustotal_collector:check_ip:68 - Error checking IP 98.76.54.32: 403
+2025-03-16 23:47:15.897 | ERROR    | collectors.feeds.virustotal_collector:check_ip:68 - Error checking IP 102.45.67.89: 403
+2025-03-16 23:47:16.268 | ERROR    | collectors.feeds.virustotal_collector:check_domain:50 - Error checking domain example.com: 403
+2025-03-16 23:47:16.276 | INFO     | api.routers.threat_intelligence:analyze_threat:221 - Successfully stored threat analysis for: On March 15, 2025, a large-scale Distributed Denial of Service (DDoS) attack was detected targeting ...
+2025-03-16 23:54:42.521 | ERROR    | api.main:general_exception_handler:71 - Unexpected error occurred: 5 validation errors:
+  {'type': 'list_type', 'loc': ('response', 0, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '192.168.1.100', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'malicious-bank.com', 'confidence_score': 0.85, 'is_active': True}, {'type': 'MD5', 'value': 'd41d8cd98f00b204e9800998ecf8427e', 'confidence_score': 0.95, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 1, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'Domain', 'value': 'maliciousbank-login.com', 'confidence_score': 0.85, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 2, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '192.168.45.23', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '202.54.12.98', 'confidence_score': 0.9, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 3, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '185.23.45.11', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '98.76.54.32', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '102.45.67.89', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'example.com', 'confidence_score': 0.85, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 4, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '185.23.45.11', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '98.76.54.32', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '102.45.67.89', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'example.com', 'confidence_score': 0.85, 'is_active': True}]}}
+
+2025-03-16 23:54:42.547 | ERROR    | api.main:general_exception_handler:71 - Unexpected error occurred: 5 validation errors:
+  {'type': 'list_type', 'loc': ('response', 0, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '192.168.1.100', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'malicious-bank.com', 'confidence_score': 0.85, 'is_active': True}, {'type': 'MD5', 'value': 'd41d8cd98f00b204e9800998ecf8427e', 'confidence_score': 0.95, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 1, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'Domain', 'value': 'maliciousbank-login.com', 'confidence_score': 0.85, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 2, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '192.168.45.23', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '202.54.12.98', 'confidence_score': 0.9, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 3, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '185.23.45.11', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '98.76.54.32', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '102.45.67.89', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'example.com', 'confidence_score': 0.85, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 4, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '185.23.45.11', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '98.76.54.32', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '102.45.67.89', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'example.com', 'confidence_score': 0.85, 'is_active': True}]}}
+
+2025-03-16 23:54:42.554 | ERROR    | api.main:general_exception_handler:71 - Unexpected error occurred: 5 validation errors:
+  {'type': 'list_type', 'loc': ('response', 0, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '192.168.1.100', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'malicious-bank.com', 'confidence_score': 0.85, 'is_active': True}, {'type': 'MD5', 'value': 'd41d8cd98f00b204e9800998ecf8427e', 'confidence_score': 0.95, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 1, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'Domain', 'value': 'maliciousbank-login.com', 'confidence_score': 0.85, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 2, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '192.168.45.23', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '202.54.12.98', 'confidence_score': 0.9, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 3, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '185.23.45.11', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '98.76.54.32', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '102.45.67.89', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'example.com', 'confidence_score': 0.85, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 4, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '185.23.45.11', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '98.76.54.32', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '102.45.67.89', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'example.com', 'confidence_score': 0.85, 'is_active': True}]}}
+
+2025-03-16 23:54:45.834 | ERROR    | api.main:general_exception_handler:71 - Unexpected error occurred: 5 validation errors:
+  {'type': 'list_type', 'loc': ('response', 0, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '192.168.1.100', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'malicious-bank.com', 'confidence_score': 0.85, 'is_active': True}, {'type': 'MD5', 'value': 'd41d8cd98f00b204e9800998ecf8427e', 'confidence_score': 0.95, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 1, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'Domain', 'value': 'maliciousbank-login.com', 'confidence_score': 0.85, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 2, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '192.168.45.23', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '202.54.12.98', 'confidence_score': 0.9, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 3, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '185.23.45.11', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '98.76.54.32', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '102.45.67.89', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'example.com', 'confidence_score': 0.85, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 4, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '185.23.45.11', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '98.76.54.32', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '102.45.67.89', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'example.com', 'confidence_score': 0.85, 'is_active': True}]}}
+
+2025-03-16 23:54:45.842 | ERROR    | api.main:general_exception_handler:71 - Unexpected error occurred: 5 validation errors:
+  {'type': 'list_type', 'loc': ('response', 0, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '192.168.1.100', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'malicious-bank.com', 'confidence_score': 0.85, 'is_active': True}, {'type': 'MD5', 'value': 'd41d8cd98f00b204e9800998ecf8427e', 'confidence_score': 0.95, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 1, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'Domain', 'value': 'maliciousbank-login.com', 'confidence_score': 0.85, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 2, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '192.168.45.23', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '202.54.12.98', 'confidence_score': 0.9, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 3, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '185.23.45.11', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '98.76.54.32', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '102.45.67.89', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'example.com', 'confidence_score': 0.85, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 4, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '185.23.45.11', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '98.76.54.32', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '102.45.67.89', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'example.com', 'confidence_score': 0.85, 'is_active': True}]}}
+
+2025-03-16 23:54:45.851 | ERROR    | api.main:general_exception_handler:71 - Unexpected error occurred: 5 validation errors:
+  {'type': 'list_type', 'loc': ('response', 0, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '192.168.1.100', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'malicious-bank.com', 'confidence_score': 0.85, 'is_active': True}, {'type': 'MD5', 'value': 'd41d8cd98f00b204e9800998ecf8427e', 'confidence_score': 0.95, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 1, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'Domain', 'value': 'maliciousbank-login.com', 'confidence_score': 0.85, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 2, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '192.168.45.23', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '202.54.12.98', 'confidence_score': 0.9, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 3, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '185.23.45.11', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '98.76.54.32', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '102.45.67.89', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'example.com', 'confidence_score': 0.85, 'is_active': True}]}}
+  {'type': 'list_type', 'loc': ('response', 4, 'indicators'), 'msg': 'Input should be a valid list', 'input': {'extracted_iocs': [{'type': 'IP', 'value': '185.23.45.11', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '98.76.54.32', 'confidence_score': 0.9, 'is_active': True}, {'type': 'IP', 'value': '102.45.67.89', 'confidence_score': 0.9, 'is_active': True}, {'type': 'Domain', 'value': 'example.com', 'confidence_score': 0.85, 'is_active': True}]}}
+
+2025-03-17 00:24:23.934 | INFO     | api.routers.threat_intelligence:analyze_threat:205 - Predicted category: malware with confidence: 0.21419765055179596
+2025-03-17 00:24:23.938 | INFO     | api.routers.threat_intelligence:analyze_threat:209 - Extracted 0 IOCs
+2025-03-17 00:24:23.956 | INFO     | api.routers.threat_intelligence:analyze_threat:255 - Successfully stored threat analysis for: Massive volumetric attack targeting DNS infrastructure causing service outages...
+2025-03-17 00:24:46.757 | INFO     | api.routers.threat_intelligence:analyze_threat:205 - Predicted category: malware with confidence: 0.21419765055179596
+2025-03-17 00:24:46.759 | INFO     | api.routers.threat_intelligence:analyze_threat:209 - Extracted 0 IOCs
+2025-03-17 00:24:46.764 | INFO     | api.routers.threat_intelligence:analyze_threat:255 - Successfully stored threat analysis for: Massive volumetric attack targeting DNS infrastructure causing service outages...
+2025-03-17 00:25:28.759 | INFO     | api.routers.threat_intelligence:analyze_threat:205 - Predicted category: malware with confidence: 0.21419765055179596
+2025-03-17 00:25:28.761 | INFO     | api.routers.threat_intelligence:analyze_threat:209 - Extracted 0 IOCs
+2025-03-17 00:25:28.767 | INFO     | api.routers.threat_intelligence:analyze_threat:255 - Successfully stored threat analysis for: Massive volumetric attack targeting DNS infrastructure causing service outages...
+2025-03-17 00:26:39.156 | INFO     | api.routers.threat_intelligence:analyze_threat:205 - Predicted category: malware with confidence: 0.21768930554389954
+2025-03-17 00:26:39.157 | INFO     | api.routers.threat_intelligence:analyze_threat:209 - Extracted 0 IOCs
+2025-03-17 00:26:39.167 | INFO     | api.routers.threat_intelligence:analyze_threat:255 - Successfully stored threat analysis for: Email campaign impersonating bank login pages to steal credentials...
+2025-03-17 00:27:05.823 | INFO     | api.routers.threat_intelligence:analyze_threat:205 - Predicted category: ransomware with confidence: 0.21488182246685028
+2025-03-17 00:27:05.823 | INFO     | api.routers.threat_intelligence:analyze_threat:209 - Extracted 0 IOCs
+2025-03-17 00:27:05.827 | INFO     | api.routers.threat_intelligence:analyze_threat:255 - Successfully stored threat analysis for: Customer database exposed through misconfigured cloud storage bucket...
+2025-03-17 10:03:03.065 | INFO     | api.routers.threat_intelligence:analyze_threat:228 - Predicted category: malware with confidence: 0.22105613350868225
+2025-03-17 10:03:03.070 | INFO     | api.routers.threat_intelligence:analyze_threat:232 - Extracted 6 IOCs
+2025-03-17 10:03:04.257 | ERROR    | collectors.feeds.virustotal_collector:check_ip:68 - Error checking IP 192.168.200.45: 403
+2025-03-17 10:03:04.650 | ERROR    | collectors.feeds.virustotal_collector:check_ip:68 - Error checking IP 145.239.225.42: 403
+2025-03-17 10:03:05.379 | ERROR    | collectors.feeds.virustotal_collector:check_domain:50 - Error checking domain darknet-exploit.com: 403
+2025-03-17 10:03:06.113 | ERROR    | collectors.feeds.virustotal_collector:check_domain:50 - Error checking domain stolencredentials.biz: 403
+2025-03-17 10:03:06.155 | INFO     | api.routers.threat_intelligence:analyze_threat:278 - Successfully stored threat analysis for: Incident Overview:
+A highly sophisticated Advanced Persistent Threat (APT) group has been observed t...
+2025-03-17 10:04:48.326 | INFO     | api.routers.threat_intelligence:analyze_threat:228 - Predicted category: malware with confidence: 0.22182819247245789
+2025-03-17 10:04:48.328 | INFO     | api.routers.threat_intelligence:analyze_threat:232 - Extracted 2 IOCs
+2025-03-17 10:04:49.469 | ERROR    | collectors.feeds.virustotal_collector:check_ip:68 - Error checking IP 185.220.101.102: 403
+2025-03-17 10:04:49.872 | ERROR    | collectors.feeds.virustotal_collector:check_ip:68 - Error checking IP 203.0.113.45: 403
+2025-03-17 10:04:49.884 | INFO     | api.routers.threat_intelligence:analyze_threat:278 - Successfully stored threat analysis for: A state-sponsored cyber warfare unit has launched a coordinated attack on national security agencies...
+2025-03-18 10:31:34.059 | INFO     | api.routers.threat_intelligence:analyze_threat:228 - Predicted category: data_breach with confidence: 0.22861447930335999
+2025-03-18 10:31:34.066 | INFO     | api.routers.threat_intelligence:analyze_threat:232 - Extracted 3 IOCs
+2025-03-18 10:31:34.580 | ERROR    | collectors.feeds.virustotal_collector:check_ip:68 - Error checking IP 192.168.1.100: 403
+2025-03-18 10:31:34.953 | ERROR    | collectors.feeds.virustotal_collector:check_domain:50 - Error checking domain malicious-domain.com: 403
+2025-03-18 10:31:34.981 | INFO     | api.routers.threat_intelligence:analyze_threat:278 - Successfully stored threat analysis for: Suspicious malware activity detected with the following characteristics:
+MD5 hash: d41d8cd98f00b204e...
+2025-03-18 10:32:43.154 | INFO     | api.routers.threat_intelligence:analyze_threat:228 - Predicted category: data_breach with confidence: 0.2265673726797104
+2025-03-18 10:32:43.156 | INFO     | api.routers.threat_intelligence:analyze_threat:232 - Extracted 8 IOCs
+2025-03-18 10:32:43.699 | ERROR    | collectors.feeds.virustotal_collector:check_ip:68 - Error checking IP 45.67.89.123: 403
+2025-03-18 10:32:44.106 | ERROR    | collectors.feeds.virustotal_collector:check_ip:68 - Error checking IP 91.234.56.78: 403
+2025-03-18 10:32:44.572 | ERROR    | collectors.feeds.virustotal_collector:check_ip:68 - Error checking IP 178.91.23.45: 403
+2025-03-18 10:32:45.033 | ERROR    | collectors.feeds.virustotal_collector:check_domain:50 - Error checking domain evil-botnet.ru: 403
+2025-03-18 10:32:45.635 | ERROR    | collectors.feeds.virustotal_collector:check_domain:50 - Error checking domain malware-control.cn: 403
+2025-03-18 10:32:46.089 | ERROR    | collectors.feeds.virustotal_collector:check_domain:50 - Error checking domain exfil-server.xyz: 403
+2025-03-18 10:32:46.106 | INFO     | api.routers.threat_intelligence:analyze_threat:278 - Successfully stored threat analysis for: CRITICAL ALERT: Sophisticated ransomware attack in progress!
+Multiple systems compromised with Conti...
+2025-03-18 10:33:58.754 | INFO     | api.routers.threat_intelligence:analyze_threat:228 - Predicted category: data_breach with confidence: 0.22746817767620087
+2025-03-18 10:33:58.755 | INFO     | api.routers.threat_intelligence:analyze_threat:232 - Extracted 5 IOCs
+2025-03-18 10:33:59.244 | ERROR    | collectors.feeds.virustotal_collector:check_ip:68 - Error checking IP 195.54.160.123: 403
+2025-03-18 10:33:59.684 | ERROR    | collectors.feeds.virustotal_collector:check_domain:50 - Error checking domain ransom-command.hacker.ru: 403
+2025-03-18 10:34:00.077 | ERROR    | collectors.feeds.virustotal_collector:check_domain:50 - Error checking domain vssadmin.exe: 403
+2025-03-18 10:34:00.096 | INFO     | api.routers.threat_intelligence:analyze_threat:278 - Successfully stored threat analysis for: URGENT SECURITY ALERT: Active Ransomware Attack
+Type: Ransomware
+Severity: Critical
+Status: Active A...
+2025-03-18 11:59:02.625 | INFO     | api.routers.threat_intelligence:analyze_threat:228 - Predicted category: malware with confidence: 0.719001054763794
+2025-03-18 11:59:02.632 | INFO     | api.routers.threat_intelligence:analyze_threat:232 - Extracted 9 IOCs
+2025-03-18 11:59:03.165 | ERROR    | collectors.feeds.virustotal_collector:check_ip:68 - Error checking IP 45.67.89.123: 403
+2025-03-18 11:59:03.545 | ERROR    | collectors.feeds.virustotal_collector:check_ip:68 - Error checking IP 91.234.56.78: 403
+2025-03-18 11:59:03.980 | ERROR    | collectors.feeds.virustotal_collector:check_ip:68 - Error checking IP 178.91.23.45: 403
+2025-03-18 11:59:04.348 | ERROR    | collectors.feeds.virustotal_collector:check_domain:50 - Error checking domain vssadmin.exe: 403
+2025-03-18 11:59:04.715 | ERROR    | collectors.feeds.virustotal_collector:check_domain:50 - Error checking domain evil-botnet.ru: 403
+2025-03-18 11:59:05.745 | ERROR    | collectors.feeds.virustotal_collector:check_domain:50 - Error checking domain malware-control.cn: 403
+2025-03-18 11:59:06.143 | ERROR    | collectors.feeds.virustotal_collector:check_domain:50 - Error checking domain exfil-server.xyz: 403
+2025-03-18 11:59:06.617 | INFO     | api.routers.threat_intelligence:analyze_threat:278 - Successfully stored threat analysis for: CRITICAL ALERT: Sophisticated Ransomware Attack Detected
+
+Type: Ransomware
+Severity: Critical
+Status...
+2025-03-19 11:11:45.090 | INFO     | api.routers.threat_intelligence:analyze_threat:235 - Starting threat analysis
+2025-03-19 11:11:46.654 | INFO     | api.routers.threat_intelligence:analyze_threat:240 - Predicted category: malware with confidence: 0.5618097186088562
+2025-03-19 11:11:46.655 | INFO     | api.routers.threat_intelligence:analyze_threat:248 - Extracted 0 IOCs
+2025-03-19 11:11:46.780 | INFO     | api.routers.threat_intelligence:analyze_threat:305 - Successfully stored threat analysis
+2025-03-19 12:07:17.888 | INFO     | api.routers.threat_intelligence:analyze_threat:235 - Starting threat analysis
+2025-03-19 12:07:19.494 | INFO     | api.routers.threat_intelligence:analyze_threat:240 - Predicted category: malware with confidence: 0.6050366163253784
+2025-03-19 12:07:19.494 | INFO     | api.routers.threat_intelligence:analyze_threat:248 - Extracted 0 IOCs
+2025-03-19 12:07:20.017 | INFO     | api.routers.threat_intelligence:analyze_threat:305 - Successfully stored threat analysis
+2025-03-19 14:03:26.724 | INFO     | api.routers.threat_intelligence:analyze_threat:235 - Starting threat analysis
+2025-03-19 14:03:27.381 | INFO     | api.routers.threat_intelligence:analyze_threat:240 - Predicted category: malware with confidence: 0.6050366163253784
+2025-03-19 14:03:27.381 | INFO     | api.routers.threat_intelligence:analyze_threat:248 - Extracted 0 IOCs
+2025-03-19 14:03:27.389 | INFO     | api.routers.threat_intelligence:analyze_threat:305 - Successfully stored threat analysis
+2025-03-19 14:06:30.852 | INFO     | api.routers.threat_intelligence:analyze_threat:235 - Starting threat analysis
+2025-03-19 14:06:30.942 | INFO     | api.routers.threat_intelligence:analyze_threat:240 - Predicted category: malware with confidence: 0.6050366163253784
+2025-03-19 14:06:30.943 | INFO     | api.routers.threat_intelligence:analyze_threat:248 - Extracted 0 IOCs
+2025-03-19 14:06:30.947 | INFO     | api.routers.threat_intelligence:analyze_threat:305 - Successfully stored threat analysis
+2025-03-19 14:07:17.866 | INFO     | api.routers.threat_intelligence:analyze_threat:235 - Starting threat analysis
+2025-03-19 14:07:17.955 | INFO     | api.routers.threat_intelligence:analyze_threat:240 - Predicted category: malware with confidence: 0.5962995290756226
+2025-03-19 14:07:17.955 | INFO     | api.routers.threat_intelligence:analyze_threat:248 - Extracted 0 IOCs
+2025-03-19 14:07:17.958 | INFO     | api.routers.threat_intelligence:analyze_threat:305 - Successfully stored threat analysis
+2025-03-19 14:07:26.883 | INFO     | api.routers.threat_intelligence:analyze_threat:235 - Starting threat analysis
+2025-03-19 14:07:26.973 | INFO     | api.routers.threat_intelligence:analyze_threat:240 - Predicted category: malware with confidence: 0.6050366163253784
+2025-03-19 14:07:26.973 | INFO     | api.routers.threat_intelligence:analyze_threat:248 - Extracted 0 IOCs
+2025-03-19 14:07:26.976 | INFO     | api.routers.threat_intelligence:analyze_threat:305 - Successfully stored threat analysis
+2025-03-19 14:07:43.135 | INFO     | api.routers.threat_intelligence:analyze_threat:235 - Starting threat analysis
+2025-03-19 14:07:43.221 | INFO     | api.routers.threat_intelligence:analyze_threat:240 - Predicted category: malware with confidence: 0.6086606979370117
+2025-03-19 14:07:43.221 | INFO     | api.routers.threat_intelligence:analyze_threat:248 - Extracted 0 IOCs
+2025-03-19 14:07:43.224 | INFO     | api.routers.threat_intelligence:analyze_threat:305 - Successfully stored threat analysis
+2025-03-19 14:11:56.439 | INFO     | api.routers.threat_intelligence:analyze_threat:235 - Starting threat analysis
+2025-03-19 14:11:57.995 | INFO     | api.routers.threat_intelligence:analyze_threat:240 - Predicted category: malware with confidence: 0.6050366163253784
+2025-03-19 14:11:57.997 | INFO     | api.routers.threat_intelligence:analyze_threat:248 - Extracted 0 IOCs
+2025-03-19 14:11:58.138 | INFO     | api.routers.threat_intelligence:analyze_threat:305 - Successfully stored threat analysis
+2025-03-19 14:12:11.503 | INFO     | api.routers.threat_intelligence:analyze_threat:235 - Starting threat analysis
+2025-03-19 14:12:11.718 | INFO     | api.routers.threat_intelligence:analyze_threat:240 - Predicted category: malware with confidence: 0.6278904676437378
+2025-03-19 14:12:11.718 | INFO     | api.routers.threat_intelligence:analyze_threat:248 - Extracted 2 IOCs
+2025-03-19 14:12:11.736 | INFO     | api.routers.threat_intelligence:analyze_threat:305 - Successfully stored threat analysis
+2025-03-19 14:12:33.685 | INFO     | api.routers.threat_intelligence:analyze_threat:235 - Starting threat analysis
+2025-03-19 14:12:33.883 | INFO     | api.routers.threat_intelligence:analyze_threat:240 - Predicted category: malware with confidence: 0.6278904676437378
+2025-03-19 14:12:33.883 | INFO     | api.routers.threat_intelligence:analyze_threat:248 - Extracted 2 IOCs
+2025-03-19 14:12:33.887 | INFO     | api.routers.threat_intelligence:analyze_threat:305 - Successfully stored threat analysis
+2025-03-19 14:23:12.408 | ERROR    | api.routers.threat_intelligence:get_threats:99 - Error getting threats: Object of type datetime is not JSON serializable
+2025-03-19 14:23:12.410 | ERROR    | api.main:http_exception_handler:63 - HTTP error occurred: Error retrieving threats
+2025-03-19 14:31:46.414 | INFO     | api.routers.threat_intelligence:analyze_threat:235 - Starting threat analysis
+2025-03-19 14:31:48.070 | INFO     | api.routers.threat_intelligence:analyze_threat:240 - Predicted category: malware with confidence: 0.43667981028556824
+2025-03-19 14:31:48.071 | INFO     | api.routers.threat_intelligence:analyze_threat:248 - Extracted 0 IOCs
+2025-03-19 14:31:48.099 | INFO     | api.routers.threat_intelligence:analyze_threat:305 - Successfully stored threat analysis
+2025-03-19 14:32:46.359 | INFO     | api.routers.threat_intelligence:analyze_threat:235 - Starting threat analysis
+2025-03-19 14:32:46.539 | INFO     | api.routers.threat_intelligence:analyze_threat:240 - Predicted category: malware with confidence: 0.6833308935165405
+2025-03-19 14:32:46.539 | INFO     | api.routers.threat_intelligence:analyze_threat:248 - Extracted 1 IOCs
+2025-03-19 14:32:46.549 | INFO     | api.routers.threat_intelligence:analyze_threat:305 - Successfully stored threat analysis
+2025-03-19 14:33:36.954 | INFO     | api.routers.threat_intelligence:analyze_threat:235 - Starting threat analysis
+2025-03-19 14:33:37.138 | INFO     | api.routers.threat_intelligence:analyze_threat:240 - Predicted category: malware with confidence: 0.6833308935165405
+2025-03-19 14:33:37.138 | INFO     | api.routers.threat_intelligence:analyze_threat:248 - Extracted 1 IOCs
+2025-03-19 14:33:37.142 | INFO     | api.routers.threat_intelligence:analyze_threat:305 - Successfully stored threat analysis
+2025-03-19 14:35:54.535 | INFO     | api.routers.threat_intelligence:analyze_threat:235 - Starting threat analysis
+2025-03-19 14:35:55.353 | INFO     | api.routers.threat_intelligence:analyze_threat:240 - Predicted category: malware with confidence: 0.3966890871524811
+2025-03-19 14:35:55.354 | INFO     | api.routers.threat_intelligence:analyze_threat:248 - Extracted 1 IOCs
+2025-03-19 14:35:55.361 | INFO     | api.routers.threat_intelligence:analyze_threat:305 - Successfully stored threat analysis
+2025-03-19 14:36:18.971 | INFO     | api.routers.threat_intelligence:analyze_threat:235 - Starting threat analysis
+2025-03-19 14:36:19.142 | INFO     | api.routers.threat_intelligence:analyze_threat:240 - Predicted category: malware with confidence: 0.6833308935165405
+2025-03-19 14:36:19.142 | INFO     | api.routers.threat_intelligence:analyze_threat:248 - Extracted 1 IOCs
+2025-03-19 14:36:19.147 | INFO     | api.routers.threat_intelligence:analyze_threat:305 - Successfully stored threat analysis
+2025-03-26 10:01:34.788 | INFO     | api.routers.threat_intelligence:analyze_threat:235 - Starting threat analysis
+2025-03-26 10:01:36.307 | ERROR    | api.routers.threat_intelligence:analyze_threat:242 - Error in threat classification: a Tensor with 10 elements cannot be converted to Scalar
+2025-03-26 10:01:36.307 | ERROR    | api.routers.threat_intelligence:analyze_threat:314 - HTTP error in threat analysis: 500: Error in threat classification
+2025-03-26 10:01:36.310 | ERROR    | api.main:http_exception_handler:63 - HTTP error occurred: Error in threat classification
+2025-03-26 10:01:47.924 | INFO     | api.routers.threat_intelligence:analyze_threat:235 - Starting threat analysis
+2025-03-26 10:01:48.101 | ERROR    | api.routers.threat_intelligence:analyze_threat:242 - Error in threat classification: a Tensor with 10 elements cannot be converted to Scalar
+2025-03-26 10:01:48.102 | ERROR    | api.routers.threat_intelligence:analyze_threat:314 - HTTP error in threat analysis: 500: Error in threat classification
+2025-03-26 10:01:48.103 | ERROR    | api.main:http_exception_handler:63 - HTTP error occurred: Error in threat classification
+2025-03-26 10:03:21.502 | INFO     | api.routers.threat_intelligence:analyze_threat:235 - Starting threat analysis
+2025-03-26 10:03:21.504 | INFO     | api.routers.threat_intelligence:analyze_threat:240 - Predicted category: phishing with confidence: 0.7
+2025-03-26 10:03:21.505 | INFO     | api.routers.threat_intelligence:analyze_threat:248 - Extracted 2 IOCs
+2025-03-26 10:03:21.519 | INFO     | api.routers.threat_intelligence:analyze_threat:305 - Successfully stored threat analysis
+2025-03-26 10:06:43.204 | INFO     | api.routers.threat_intelligence:analyze_threat:235 - Starting threat analysis
+2025-03-26 10:06:43.205 | INFO     | api.routers.threat_intelligence:analyze_threat:240 - Predicted category: phishing with confidence: 0.8
+2025-03-26 10:06:43.206 | INFO     | api.routers.threat_intelligence:analyze_threat:248 - Extracted 2 IOCs
+2025-03-26 10:06:43.232 | INFO     | api.routers.threat_intelligence:analyze_threat:305 - Successfully stored threat analysis
+2025-03-26 10:07:26.143 | INFO     | api.routers.threat_intelligence:analyze_threat:235 - Starting threat analysis
+2025-03-26 10:07:26.144 | INFO     | api.routers.threat_intelligence:analyze_threat:240 - Predicted category: ransomware with confidence: 0.5
+2025-03-26 10:07:26.144 | INFO     | api.routers.threat_intelligence:analyze_threat:248 - Extracted 1 IOCs
+2025-03-26 10:07:26.152 | INFO     | api.routers.threat_intelligence:analyze_threat:305 - Successfully stored threat analysis
+2025-03-26 10:07:39.296 | INFO     | api.routers.threat_intelligence:analyze_threat:235 - Starting threat analysis
+2025-03-26 10:07:39.297 | INFO     | api.routers.threat_intelligence:analyze_threat:240 - Predicted category: data_breach with confidence: 0.4
+2025-03-26 10:07:39.297 | INFO     | api.routers.threat_intelligence:analyze_threat:248 - Extracted 2 IOCs
+2025-03-26 10:07:39.304 | INFO     | api.routers.threat_intelligence:analyze_threat:305 - Successfully stored threat analysis
+2025-03-26 10:09:08.393 | INFO     | api.routers.threat_intelligence:analyze_threat:235 - Starting threat analysis
+2025-03-26 10:09:08.395 | INFO     | api.routers.threat_intelligence:analyze_threat:240 - Predicted category: ransomware with confidence: 0.5
+2025-03-26 10:09:08.396 | INFO     | api.routers.threat_intelligence:analyze_threat:248 - Extracted 1 IOCs
+2025-03-26 10:09:08.418 | INFO     | api.routers.threat_intelligence:analyze_threat:305 - Successfully stored threat analysis
+2025-03-26 14:14:39.844 | INFO     | api.routers.threat_intelligence:analyze_threat:235 - Starting threat analysis
+2025-03-26 14:14:39.857 | INFO     | api.routers.threat_intelligence:analyze_threat:240 - Predicted category: data_breach with confidence: 0.4
+2025-03-26 14:14:39.859 | INFO     | api.routers.threat_intelligence:analyze_threat:248 - Extracted 2 IOCs
+2025-03-26 14:14:39.890 | INFO     | api.routers.threat_intelligence:analyze_threat:305 - Successfully stored threat analysis
+2025-04-12 15:55:56.817 | INFO     | api.routers.threat_intelligence:analyze_threat:235 - Starting threat analysis
+2025-04-12 15:55:56.827 | INFO     | api.routers.threat_intelligence:analyze_threat:240 - Predicted category: ddos with confidence: 0.5
+2025-04-12 15:55:56.831 | INFO     | api.routers.threat_intelligence:analyze_threat:248 - Extracted 2 IOCs
+2025-04-12 15:55:56.898 | INFO     | api.routers.threat_intelligence:analyze_threat:305 - Successfully stored threat analysis
+2025-04-12 16:04:53.155 | INFO     | api.routers.threat_intelligence:analyze_threat:235 - Starting threat analysis
+2025-04-12 16:04:53.163 | INFO     | api.routers.threat_intelligence:analyze_threat:240 - Predicted category: apt with confidence: 0.5
+2025-04-12 16:04:53.164 | INFO     | api.routers.threat_intelligence:analyze_threat:248 - Extracted 2 IOCs
+2025-04-12 16:04:53.224 | INFO     | api.routers.threat_intelligence:analyze_threat:305 - Successfully stored threat analysis
+2025-04-12 16:07:09.710 | INFO     | api.routers.threat_intelligence:analyze_threat:235 - Starting threat analysis
+2025-04-12 16:07:09.716 | INFO     | api.routers.threat_intelligence:analyze_threat:240 - Predicted category: data_breach with confidence: 0.5
+2025-04-12 16:07:09.717 | INFO     | api.routers.threat_intelligence:analyze_threat:248 - Extracted 3 IOCs
+2025-04-12 16:07:09.760 | INFO     | api.routers.threat_intelligence:analyze_threat:305 - Successfully stored threat analysis
